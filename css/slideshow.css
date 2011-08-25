@@ -1,0 +1,157 @@
+body {
+	background-image: url(../content/images/app/body-background.jpg);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.container {
+	overflow: hidden;
+}
+.referencesbutton {
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: 690px;
+	left: 0;
+	z-index: 1200;
+}
+.footer {
+	position: absolute;
+	width: 250px;
+	height: 70px;
+	z-index: 5;
+	background: url(../content/images/app/xarelto-logo.png) no-repeat 80px 0px;
+	bottom: 0;
+	right: 0;
+}
+.debugdiv {
+	position: absolute;
+	z-index: 2000;
+	right: 20px;
+	top: 20px;
+	height:  100px;
+	width: 300px;
+	background-color: whitesmoke;
+	font: 14px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+	border-style: dashed;
+	border-color: #ff220e;
+	overflow: auto;
+	padding: 5px 5px 5px 5px;
+	display: none;
+}
+#scroller {
+    position:absolute;
+	height:100%;
+	padding:0;
+	top: 0px;
+	left:  0px;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+	-webkit-transition: all 1s ease-out;
+}
+.slide {
+	width: 1024px;
+	min-height: 718px;
+    -webkit-transform: translate3d(0,0,0);
+	margin-top: 0px;/*20px*/
+	-webkit-transition: all 1s ease-out;
+} 
+.xareltoscroller {
+	position:absolute;
+	top: 0px;
+	left:  0px;
+	width: 100%;
+	padding:0;
+   -webkit-box-orient: vertical;
+   -webkit-transition: all 1s ease-out;
+}  
+.efficacyscroller {
+	 position:absolute;
+	 top: 0px;
+	 left:  0px;
+	width: 100%;
+	padding:0;
+   -webkit-box-orient: vertical;
+	-webkit-transition: all 1s ease-out;
+} 
+.innerslide {
+	width: 100%;
+	height: 718px;
+	float: left;
+	padding:0;
+	margin:-1px 0px;
+	-webkit-transition: all 1s ease-out;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.rocket_af1scroller {
+	position:absolute;
+	top: 0px;
+	left:  0px;
+	width: 100%;
+	padding:0;
+     -webkit-box-orient: vertical;
+	-webkit-transition: all 1s ease-out;
+}   
+.safety1scroller {
+	 position:absolute;
+	 top: 0px;
+	 left:  0px;
+	 width: 100%;
+	 padding:0;
+	 -webkit-box-orient: vertical;
+	-webkit-transition: all 1s ease-out;
+} 
+
+.formholder {
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	overflow: hidden;
+	background-color: white;
+	padding: 20px;
+}
+
+article {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+}
+
+.rocket_af1scroller article.morebelow:before {
+	content: url(../content/images/app/arrows/down.png);
+	position: absolute;
+	left: 626px;
+	bottom: -50px;
+
+}
+
+article.morebelow:before {
+	content: url(../content/images/app/arrows/down.png);
+	position: absolute;
+	left: 496px;
+	bottom: -50px;
+}
+
+article.moreabove:after {
+	content: url(../content/images/app/arrows/up.png);
+	position: absolute;
+	left: 496px;
+	bottom: -50px;
+}
+
+
+/*: Indicator-arrows: Content both below and above
+-------------------------------------------------*/
+article.morebelow.moreabove:before {
+	content: url(../content/images/app/arrows/down.png);
+	position: absolute;
+	left: 483px;
+	bottom: -50px;
+}
+
+article.morebelow.moreabove:after {
+	content: url(../content/images/app/arrows/up.png);
+	position: absolute;
+	left: 509px;
+	bottom: -50px;
+}

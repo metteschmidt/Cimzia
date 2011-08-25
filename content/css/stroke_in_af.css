@@ -1,0 +1,263 @@
+.slide3 {
+	display: block;
+	width: 1024px;
+	height: 699px;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background: url(../images/slide3/clotman_1.png) -177px 325px no-repeat,
+	url(../images/currentTreatment/clotman_2.png) 817px 109px no-repeat,
+	url(../images/slide3/stickmen_bg.png);
+	
+}
+.slide3.off{
+background: url(../images/slide3/clotman_1.png) -177px 325px no-repeat,
+	url(../images/currentTreatment/clotman_2.png) 817px 109px no-repeat;
+	
+
+}
+
+.slide3 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: absolute;
+	display: none;
+	top: 326px;
+	width: 678px;
+	height: 235px;
+	left: 155px;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide3 .module .legend, .module .source {
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-weight: normal;
+}
+
+.slide3 .module .legend {
+	width: 100px;
+	position: absolute;
+	top: 25px;
+	left: -115px;
+	font-size: .9em;
+	text-align: right;
+}
+
+.slide3 .module .source {
+	width: 230px;
+	position: absolute;
+	top: 103%;
+	left: 25px;
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	font-size: .75em;
+}
+
+
+
+.slide3 .module ul {
+	position:
+
+relative;
+	list-style: list-style-image;
+	list-style-image: url(../images/slide3/ul.png);
+	padding-left: 50px;
+}
+
+.slide3 .module li {
+	display: none;
+	font-size: 24px;
+	/* 2011-05-12 */
+            
+
+font-family: Frutiger45LightBold;
+}
+
+.slide3Statement0 {
+	display: none;
+}
+
+.slide3 .module li b {
+	color: #d9187e;
+    font-size: 32px;
+	text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 7px #000;
+	font-family: 'Frutiger55RomanBold';
+}
+
+.slide3 .module p em {
+	text-align: left;
+}
+
+.slide3 .module p {
+	margin-top: 70px;
+	margin-left: 30px;
+}
+
+.slide3 h1, .slide3 p.subHead {
+	width: 980px;
+    position: absolute;
+	text-align: center;
+	white-space: nowrap;
+	padding: 0;
+	margin-top: 20px;
+	z-index: 100;
+}
+
+.slide3 h1 span {
+	-webkit-user-select: none;
+}
+
+.slide3 p.subHead {
+	position: absolute;
+	top: 87px;
+    left: 0;
+}
+
+.slide3 .stickMan {
+	display: block;
+	width: 23px;
+	height: 40px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	background-image: url(../images/slide3/stickMan.png);
+	background-repeat: no-repeat;
+	z-index: 150;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 500ms;
+/* 2011-05-15 */
+}
+
+.slide3 .stickMan .deadStickMan {
+	width: 23px;
+	height: 40px;
+	background-image: url(../images/slide3/stickMan.png);
+	
+	background-position: 0 -40px;
+	background-repeat: no-repeat;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 250ms;
+	-webkit-transform-style: preserve3d;
+}
+
+.slide3 .stickMan0 {
+	left: 65px;
+	top: 111px;
+	background-position: 0 -40px;
+}
+
+.slide3 .stickMan1 {
+	left: 245px;
+	/* 2011-05-12 */
+
+
+top: 34px;
+	/* 2011-05-12 */
+
+background-position: 0 -40px;
+}
+
+.slide3 .stickMan8 {
+	left: 260px;
+	top: 404px;
+}
+
+.slide3 .stickMan3 {
+	left: 267px;
+	top: 600px;
+}
+
+.slide3 .stickMan7 {
+	left: 403px;
+	top: 448px;
+}
+
+.slide3 .stickMan5 {
+	left: 529px;
+	top: 358px;
+}
+
+.slide3 .stickMan6 {
+	left: 561px;
+	top: 487px;
+}
+
+.slide3 .stickMan4 {
+	left: 649px;
+	top: 392px;
+}
+
+.slide3 .stickMan2 {
+	left: 825px;
+	top: 416px;
+}
+
+.slide3 .stickMan9 {
+	left: 920px;
+	top: 148px;
+}
+
+.foldContainer {
+	position: absolute;
+	top: 185px;
+	left: 185px;
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 626px;
+	white-space: nowrap;
+	text-align: center;
+	z-index: 100;
+}
+
+.foldContainer li {
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 121px;
+	height: 135px;
+	overflow: hidden;
+	background-image: url(../images/slide3/fold.png);
+	background-repeat: no-repeat;
+	line-height: 130px;
+	text-align: center;
+	background-position: 0 -135px;
+	font-family: Frutiger95UltraBlackRegular;
+	/* 2011-05-11 */
+            font-size: 20px;
+	/* 2011-05-11 */
+            color: rgb(153,153,153);
+}
+
+.foldContainer li.foldButton0 {
+	background-position: 0 0
+
+;
+	color: White;
+}
+
+/*
+        .foldContainer l
+
+i.foldButton0
+        {
+            background-position: 0 0;
+            color: White;
+        }
+        */
+
+ul li.slide3Statement1, ul li.slide3Statement2, .slide3Statement0 em 
+{
+	font-size: 24px !important;
+}
+
+ul li.slide3Statement2 {
+	margin-top:-9px;
+}

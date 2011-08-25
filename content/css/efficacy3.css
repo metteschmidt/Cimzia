@@ -1,0 +1,82 @@
+/* Slide 6.1 Styles */
+.slide61 dl.diamonds { left: 120px; position: absolute; padding-top: 50px; }
+.slide61 dl.diamonds dt:nth-child(1) { font-size: 30px; padding-top: 60px; }
+.slide61 dl.diamonds { margin: -20px 0 0 40px; }
+.slide61 dl.diamonds dt { background-image: url(../images/app/diamonds/diamond-gradient.png); font-family: "Frutiger95UltraBlackRegular", sans-serif; font-size: 17px; height: 114px; margin-top: -18px; padding-top: 65px; width: 151px; }
+.slide61 dl.diamonds dd { background: transparent url(../images/app/diamonds/ribbonShort.png) no-repeat; border: none; height: 94px; left: -76px; padding: 10px 0 0 75px; top: 14px; width: 426px; }
+.slide61 dl.diamonds dd:before { content: ""; }
+.slide61 dl.diamonds dd p, .slide61 dl.diamonds dd p em { font-size: 18px; color: #000 !important;}
+
+/* Slide 6.1 Styles */
+.slide61 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/efficacy/clotman_6.png);
+	background-position: -15px -40px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.slide61 .hideElem { display: none;}
+.slide61 .dLinks li.dSelected { background-position: 0px -80px; }
+.slide61 .dLinks { bottom: 50px; left: 10px; list-style: none; margin-left: 80px; position: absolute; }
+.slide61 .dLinks li {background: url(../images/efficacy/Diamond_Sprite.png) no-repeat; color: #48247e; float: left; font-family: "FrutigerLTStd77BlackCondensed", sans-serif; font-size: 16px; padding: 20px 8px 22px 75px;  }
+
+.slide61 .ref1 { left: 190px; position: absolute; top: 468px; }
+.slide61 .ref2 { left: 211px; position: absolute; top: 515px; }
+.slide61 .ref1 p, .slide61 .ref2 p { color: black;  font-family: "FrutigerLTStd57Condensed", sans-serif; font-size: 11px;  text-align: left; }
+
+.slide61 .module .pillars { background-color: white; bottom: -16px; float: left; left: 60px; position: absolute; width: 400px; z-index: 4; }
+
+.slide61 .module .pillars li { float: left; height: 290px; list-style-type: none; margin-left: 63px; overflow: hidden; position: relative; width: 165px; }
+.slide61 .module .pillars li:first-child { margin-left: 0px; }
+.slide61 .module .pillars li .pillar { bottom: 0; float: left; left: 0; position: absolute; }
+
+.slide61 .module .pillars li .pillar img { float: left;
+	-webkit-transition-duration: 500ms; }
+	
+.slide61 .module .pillars li.brown img {
+	-webkit-transform: translate3d(0,220px,0); }
+
+.slide61 .module .pillars li.magenta img {
+	-webkit-transform: translate3d(0,189px,0); }
+
+.slide61 .module.active .pillars li img, .endState .slide61 .module .pillars li img  {
+	-webkit-transform: translate3d(0,0,0); }
+
+.slide61 .dropArrow { left: 295px; position: absolute; top: 270px; z-index: 3;
+	-webkit-transform: translate3d(0,-101px,0);
+	-webkit-transition-duration: 500ms; }
+
+.slide61 .module.done .dropArrow, .endState .slide61 .module .dropArrow {
+	top: 309px;
+	-webkit-transform: translate3d(0,0,0); }
+
+.slide61 .dLinks { bottom: 50px; left: 10px; position: absolute; }
+
+.slide61 .legend {
+	width: 100px;
+	position: absolute;
+	top: 16px;
+	left: -107px;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-size: .9em;
+	text-align: right;
+}
+.slide61 .module .legend, .module .source {
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-weight: normal;
+}
+
+.slide61 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}

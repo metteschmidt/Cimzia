@@ -1,0 +1,102 @@
+.topnav {
+	position:absolute; 
+	width: 1180px;
+    z-index: 300;
+	top: -200px;
+	left: 0px;
+	height: 45px;
+    -webkit-transition: all 1s ease-out;
+	-webkit-transform: translate3d(-122px,0,0);
+	margin: 0;
+}
+
+.topnav ul {
+	position:absolute;
+	top:  -15px;
+	left: -30px;
+}
+#topnavwrapper {
+	position:absolute;
+    z-index: 2;
+	top:0; bottom:0; left: 0;/*top45*/
+	width:100%;
+	height: 75px;
+	overflow: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.topnav.open{
+	top: 10px; 
+}
+.topnav li:nth-child(1) {
+	margin-left: 0px;
+}
+.topnav li.react {
+	background-color: #767579;
+}
+.topnav li {
+	-webkit-box-sizing:border-box;
+	height: 43px;
+    padding: 14px 18px 0 18px;
+    font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	margin-left: 5px;
+	overflow: hidden;
+	float: left;
+	display: block;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+}
+.topnav .home {
+	height: 44px;
+	width: 50px;
+	border: none;
+	background-image: url(../content/images/app/navigation/home-sprite.png), -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+	background-repeat: no-repeat;
+	background-position: -10px 0, 0 0;
+}
+.topnav .active{
+	background-image: url(../content/images/app/navigation/nav-selected.png), -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+	background-repeat: repeat-x;
+}
+.topnav .home.active{
+	background: url(../content/images/app/navigation/home-sprite.png), url(../content/images/app/navigation/nav-selected.png), -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+	background-repeat: no-repeat, repeat-x;
+    background-position: -10px 0, 0 0, 00;
+}

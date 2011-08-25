@@ -1,0 +1,23 @@
+.cover {
+	position: absolute;
+	top:  0;
+	left: 0;
+	z-index: 2;
+}
+.slide_cover p.frontTitle { 
+     display: none;
+}
+.coverdiv.frontLeg { background: url(../images/app/body-background.jpg) no-repeat 100px 0px,
+url(../images/home/leg.png) no-repeat 100px 0px; width:470px;
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -webkit-transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cover div.frontBrain  { position: absolute; 
+height: 700px;
+width: 1020px;
+
+}

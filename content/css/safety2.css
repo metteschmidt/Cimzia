@@ -1,0 +1,30 @@
+.safety2 {
+	position: relative;
+	top: 60px;
+	width: 100%;
+	height: 716px;
+}
+.safety0 {
+	width: 691px; 
+	height: 420px; 
+	left: 165px; 
+	background-image: url(../images/efficacy/module.png);
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.safety2 .ref.bottom {
+		width: 670px;
+	padding-left: 12px;
+	padding-bottom: 71px;
+	position: absolute;
+	left: 165px;
+	bottom: -23px;	
+}
+
+.safety2 .ref.bottom p {
+	font-family: FrutigerLTStd57Condensed;
+    font-size: 10px;
+	color: black;
+	text-align: left;
+}

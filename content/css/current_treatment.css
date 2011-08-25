@@ -1,0 +1,87 @@
+.slide4 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/currentTreatment/clotman_2.png) -207px 109px no-repeat,
+	url(../images/currentTreatment/clotman_3.png) 838px 111px no-repeat;
+	width: 1024px;
+	height: 716px;
+}
+
+.slide4 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide4 h1 {
+	margin-top:40px;
+	margin-bottom:26px;
+}
+
+.slide4 p em {
+	margin-top:4px;
+}
+
+.slide4 .hideElem { 
+	display: none;
+	margin-top:-30px;
+}
+
+.slide4 .boxes, .men { 
+	list-style: none; 
+	left: 104px; 
+	width: 779px;
+}
+
+.slide .men {
+	margin: -7px 0px 0px 0px; 
+}
+
+.slide4 .boxes { padding: 33px 0 10px 33px; }
+
+.slide4 .boxes li { font-family: "Frutiger45LightBold", sans-serif; font-weight:300 ; background: #e60087; border-radius: 15px; display: table; color: #fff; float: left; height: 53px; margin: auto 20px 22px auto; text-align: center; width: 236px; }
+
+.slide4 .boxes li span { display: table-cell;  vertical-align: middle; }
+
+.slide4 .men li {  background: url(../images/currentTreatment/greyMan.png) no-repeat 20px 40px; float: left; height: 180px; padding: 1px; width: 70px;
+
+    -webkit-transform-style: preserve-3d;
+
+    -webkit-transition: 0.6s;}
+
+.slide4 p.subTextMain em { font-size: 24px !important; }
+
+.slide4 ul.subTexts { list-style: square url(../images/currentTreatment/diamond-bullet.png);  margin-left: 250px; }
+
+.slide4 ul.subTexts li { color: #000; font-family: "Frutiger45LightBold", sans-serif; font-size: 24px !important; font-style: normal; margin-top: 20px; text-align: left; line-height: 1.2em;}
+
+.slide4 .pinkEm { color: #d9187e; font-size: 30px; text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 4px #000; }
+
+
+/* Flip Styles */
+
+.slide4 .card-container {
+	height: 240px; 
+	padding-top: 55px;
+}
+
+.slide4 .card {
+	height: 192px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.6s;
+}
+
+.slide4 .card .front, .card .back {	
+	position: absolute; z-index: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide4 .card .back {
+	-webkit-transform: rotateX(180deg);
+}

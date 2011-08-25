@@ -1,0 +1,30 @@
+/* Slide 4 Styles */
+.slide4 .hideElem { display: none;}
+.slide4 .boxes, .men { list-style: none; }
+.slide4 .boxes { padding: 33px 0 10px 33px; }
+.slide4 .boxes li { background: #e60087; border-radius: 15px; display: table; color: #fff; float: left; font-weight: bold; height: 53px; margin: auto 20px 22px auto; text-align: center; width: 236px; }
+.slide4 .boxes li span { display: table-cell;  vertical-align: middle; }
+.slide4 .men li {  background: url(../pages/currentTreatment/greyMan.png) no-repeat 20px 40px; float: left; height: 180px; padding: 5px; width: 70px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.6s;}
+.slide4 p.subTextMain em { font-size: 24px !important; }
+.slide4 ul.subTexts { list-style: square url(../pages/currentTreatment/diamond-bullet.png);  margin-left: 250px; }
+.slide4 ul.subTexts li { color: #000; font-family: "Frutiger45LightBold", sans-serif; font-size: 24px !important; font-style: normal; margin-bottom: 1em; text-align: left; }
+.slide4 .pinkEm { color: #d9187e; font-size: 30px; text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 4px #000; }
+
+/* Flip Styles */
+
+.slide4 .card
+{
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.6s;
+}
+.slide4 .card .front, .card .back {	position: absolute; z-index: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide4 .card .back {
+	-webkit-transform: rotateX(180deg);
+}
+
+

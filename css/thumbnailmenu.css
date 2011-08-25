@@ -1,0 +1,51 @@
+.thumbnav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	overflow: hidden;
+	opacity: 1;
+	z-index: 3;
+	background-image: url(../content/images/app/pagethumbs/background.png);
+	background-repeat: repeat-x;
+	-webkit-transition: all 0.2s ease-in;
+	-webkit-transform: translate3d(0,0,0);
+	overflow: hidden;
+
+}
+.branding {
+	position:  absolute;
+	right: 0;
+	top: 10px;
+	width: 230px;
+	height: 100%;
+	background-image: url(../content/images/app/pagethumbs/branding.png);
+}
+.thumbnav.open {
+	height: 209px;;
+}
+.thumbnav ul {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top:  -8px;
+	left: -40px;
+	float: left;
+	z-index: 4;
+	white-space: nowrap;
+}
+.thumbnav li {
+	padding-top: 33px;
+	width: 175px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	float: left;
+	display: block;
+	list-style-type: none;
+	color: #00f628;
+}
+.thumbnav li.current {
+	background-image: url(../content/images/app/pagethumbs/current.png);
+}

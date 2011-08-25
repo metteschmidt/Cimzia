@@ -1,0 +1,190 @@
+.popupWindow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1200;
+     display: none;
+	background-image: url(../content/images/app/popupWindow/popup-bg.png);
+  	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+}
+.closebutton {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 450px;
+	right: 0px;
+	background: url(../content/images/app/closeBTN.png) no-repeat center;
+}
+.popupWindow ul {
+	display: none;
+}
+
+.popupWindow.active {
+	display: block;
+}
+
+.popupWindow .popupContainer {
+	width: auto;
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	/*margin-top: 180px;*/
+	overflow: auto;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	background-color: white;
+	color: inherit;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+#zoomWindow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+    display: none;
+    
+	background-image: url(../content/images/app/popupWindow/popup-bg.png);
+  	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+}
+
+#zoomWindow.active {
+	display: block;
+}
+
+#zoomWindow2 .popupContainer {
+	width: auto;
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	/*margin-top: 180px;*/
+	overflow: auto;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	background-color: white;
+	color: inherit;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+#zoomWindow2 .popup {
+	height: 200px;
+	width: 829px;
+	padding: 15px 0; 	/* Top and bottom padding equivalent to scroll-bar-size */
+	margin: 0 15px;		/* Left and right margin equivalent to scroll-bar-size */
+	overflow: auto;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+#zoomWindow2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+    display: none;
+    
+	background-image: url(../content/images/app/popupWindow/popup-bg.png);
+  	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+}
+
+#zoomWindow2.active {
+	display: block;
+}
+
+#zoomWindow .popupContainer {
+	width: auto;
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	/*margin-top: 180px;*/
+	overflow: auto;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	background-color: white;
+	color: inherit;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+#zoomWindow .popup {
+	height: 250px;
+	width: 829px;
+	padding: 15px 0; 	/* Top and bottom padding equivalent to scroll-bar-size */
+	margin: 0 15px;		/* Left and right margin equivalent to scroll-bar-size */
+	overflow: auto;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+
+#text {
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.popup {
+	height: 500px;
+	width: 829px;
+	padding: 15px 0; 	/* Top and bottom padding equivalent to scroll-bar-size */
+	margin: 0 15px;		/* Left and right margin equivalent to scroll-bar-size */
+	overflow: auto;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+
+.popup .hotkey {
+	background-color: inherit;
+	color: #c0c0c0;
+}
+.popup p {
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	/*font-weight: normal;*/
+	color: black;
+	text-align: left;
+}
+.popup .references {
+	margin-top: 52px;
+	float: left;
+	background-color: transparent;
+	font-family: "FrutigerLTStd57Condensed", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #767579;
+	text-align: left;
+}
+.popup .references li {
+	padding: 3px 120px 20px 120px;
+	list-style-type: none;
+	background-image: url(../content/images/references/pdf-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50px 0;
+}
+.popup  .references li.none {
+	background-image: url();
+	padding-left: 120px;
+	padding-bottom: 20px;
+}
+.popup .references li.none span {
+	margin-right: .5em;
+	float: left;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: bold;
+}
+
+.popup .references a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.popup .references a span {
+	margin-right: .5em;
+	float: left;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-weight: bold;
+}

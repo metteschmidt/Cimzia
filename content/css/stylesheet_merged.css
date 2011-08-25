@@ -1,0 +1,2702 @@
+/* MERGED Stylesheet */
+
+/* Administration stylesheet */
+.slide8 {
+
+	position: absolute;
+
+	top: 60px;
+
+	background: url(../images/safety/clotman_10.png) -22px 297px no-repeat,
+	url(../images/administration/clotman_11.png) 930px 382px no-repeat;
+
+	width: 100%;
+
+	height: 716px;
+
+}
+
+.slide8 .ref {
+	position:absolute;
+	font-size: 12px;
+	left:339px;
+	bottom:432px;
+	font-family: FrutigerLTStd57Condensed;
+}
+
+.slide8 .ref.bottom {
+	padding-left: 10px;
+	padding-bottom: 0px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+.slide8 .ref.bottom p {
+	font-family: FrutigerLTStd57Condensed;
+    font-size: 11px;
+	color: black;
+	text-align: left;
+}
+
+
+
+.slide8 .card
+{
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.6s;
+}
+.slide8 .card .front, .card .back {	position: absolute; z-index: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide8 .card .back {
+	-webkit-transform: rotateX(180deg);
+}
+.slide8 .diamonds {
+	position: relative;
+}
+
+.slide8 .diamonds a {
+	text-decoration: none;
+}
+
+.slide8 dl.diamonds dt, ul.diamonds h3 {
+	width: 151px;
+	height: 95px;
+	padding-top: 69px;
+	margin-bottom: -10px;
+	float: left;
+	clear: left;
+	background-color: transparent;
+	background-image: url(../images/app/diamonds/diamond-gradient.png);
+	background-repeat: no-repeat;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: .9em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.slide8 dl.diamonds dd, ul.diamonds .content {
+	width: 412px;
+	height: 60px;
+	border: 1px solid #f03aa4;
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+	position: relative;
+	top: 23px;
+	left: -32px;
+	background-color: white;
+}
+
+.slide8 ul.diamonds .content {
+	top: 36px;
+}
+
+.slide8 dl.diamonds dd:before, ul.diamonds .content:before {
+	content: url(../images/app/diamonds/list-item-left.png);
+	position: absolute;
+	top: -1px;
+	left: -40px;
+}
+
+.slide8 ul.diamonds li {
+	list-style-type: none;
+}
+
+.slide8 ul.diamonds .content {
+	-webkit-transform: rotateX(90deg);
+	-webkit-transition-duration: 500ms;
+}
+
+.slide8 ul.diamonds li.active .content, .endState ul.diamonds li .content {
+	-webkit-transform: rotateX(0deg);
+}
+
+
+.slide8 dl.diamonds dd p, ul.diamonds .content p {
+	color: black;
+	font-family: "Frutiger45LightBold", sans-serif;
+	text-align: left;
+}
+
+
+.slide8 dl.diamonds dd p em, ul.diamonds .content p em {
+	margin-bottom: 0;
+	display: inline;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: left;
+}
+
+.slide8 dl.diamonds dt:nth-child(1), ul.diamonds li:nth-child(1) {
+	margin-left: 60px;
+}
+
+.slide8 dl.diamonds dt:nth-child(3), ul.diamonds li:nth-child(2) {
+	margin-left: 140px;
+}
+
+.slide8 dl.diamonds dt:nth-child(5), ul.diamonds li:nth-child(3) {
+	margin-left: 250px;
+}
+
+.slide8 dl.diamonds dt:nth-child(7), ul.diamonds li:nth-child(4) {
+	margin-left: 370px;
+}
+
+.slide8 dl.diamonds.wide dt {
+	width: 151px;
+	height: 104px;
+	padding-top: 60px;
+	margin-top: -14px;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: 24px;
+	background-image: url(../images/app/diamonds/diamond-gradient.png);
+	text-transform: none;
+}
+
+.slide8 dl.diamonds.wide dd {
+	width: 648px;
+}
+
+.slide8 dl.diamonds.wide dd p {
+	margin-top: 2px;
+	float: left;
+	font-size: 24px;
+}
+
+.slide8 dl.diamonds.wide dd img {
+	margin-top: 3px;
+	float: left;
+}
+.slide8 .foldouts li {
+	width: 267px;
+	height: 272px;
+	margin-top:73px;
+	margin-left: 30px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	list-style-type: none;
+}
+
+.slide8 .foldouts li:first-child {
+	margin-left: 20px;
+}
+
+.slide8 .foldouts a {
+	text-decoration: none;
+}
+
+.slide8 .foldouts li h3 {
+	width: 100%;
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 0 solid #4e2683;
+	-webkit-border-top-right-radius: 10px;
+	float: left;
+	position: absolute;
+	top: -20px;
+	left: 0;
+	z-index: 5;
+	background-color: #4e2683;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.slide8 .foldouts li .content {
+	float: left;
+	position: relative;
+	z-index: 4;
+	background-color: white;
+
+	-webkit-transform: translate3d(0,-160px,0);
+	-webkit-transition-duration: 500ms;
+	-webkit-transition-timing-function: ease-out;
+}
+
+.slide8 .foldouts .active .content, .endState .foldouts .content {
+	-webkit-transform: translate3d(0,30px,0);
+}
+
+.slide8 .foldouts li ul {
+	height: 170px;
+	padding: 20px;
+	overflow: hidden;
+	margin-top: -20px;
+	margin-bottom: 20px;
+	float: left;
+	font-size: .8em;
+}
+
+.slide8 .foldouts .active ul, .endState .foldouts ul {
+	-webkit-transform: translate3d(0,30px,0);
+}
+
+.slide8 .foldouts li .content:after {
+	content: "";
+	width: 267px;
+	height: 30px;
+	border-bottom: 0 solid #4e2683;
+	-webkit-border-bottom-left-radius: 10px;
+	margin-bottom: 4px;
+	position: absolute;
+	left: 0;
+	bottom: -11px;
+	z-index: 5;
+	background-color: #4e2683;
+	-webkit-box-shadow: 0 4px 4px rgba(0,0,0, 0.4);
+}
+
+.slide8 .foldouts li li {
+	width: auto;
+	height: auto;
+	border: none;
+	padding-left: 10px;
+	padding-bottom: 1em;
+	margin-left: 0;
+	background-color: transparent;
+	background-image: url(../images/app/bullet.png);
+	background-position: 0 4px;
+	background-repeat: no-repeat;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 16px;
+	color: black;
+}
+
+.slide8 .foldouts li li:after {
+	display: none;
+}
+
+.slide8 .foldouts li li:first-child {
+	margin: -10px 0px -62px;
+}
+/* END Administration stylesheet */
+
+/* Cover stylesheet */
+.cover {
+	position: absolute;
+	top:  0;
+	left: 0;
+	z-index: 2;
+}
+.slide_cover p.frontTitle { 
+     display: none;
+}
+.coverdiv.frontLeg { background: url(../images/app/body-background.jpg) no-repeat 100px 0px,
+url(../images/home/leg.png) no-repeat 100px 0px; width:470px;
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -webkit-transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.cover div.frontBrain  { position: absolute; 
+height: 700px;
+width: 1020px;
+
+}
+/* End cover stylesheet */
+
+/* Current treatment stylesheet */
+.slide4 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/currentTreatment/clotman_2.png) -207px 109px no-repeat,
+	url(../images/currentTreatment/clotman_3.png) 838px 111px no-repeat;
+	width: 1024px;
+	height: 716px;
+}
+
+.slide4 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide4 h1 {
+	margin-top:40px;
+	margin-bottom:26px;
+}
+
+.slide4 p em {
+	margin-top:4px;
+}
+
+.slide4 .hideElem { 
+	display: none;
+	margin-top:-30px;
+}
+
+.slide4 .boxes, .men { 
+	list-style: none; 
+	left: 104px; 
+	width: 779px;
+}
+
+.slide .men {
+	margin: -7px 0px 0px 0px; 
+}
+
+.slide4 .boxes { padding: 33px 0 10px 33px; }
+
+.slide4 .boxes li { font-family: "Frutiger45LightBold", sans-serif; font-weight:300 ; background: #e60087; border-radius: 15px; display: table; color: #fff; float: left; height: 53px; margin: auto 20px 22px auto; text-align: center; width: 236px; }
+
+.slide4 .boxes li span { display: table-cell;  vertical-align: middle; }
+
+.slide4 .men li {  background: url(../images/currentTreatment/greyMan.png) no-repeat 20px 40px; float: left; height: 180px; padding: 1px; width: 70px;
+
+    -webkit-transform-style: preserve-3d;
+
+    -webkit-transition: 0.6s;}
+
+.slide4 p.subTextMain em { font-size: 24px !important; }
+
+.slide4 ul.subTexts { list-style: square url(../images/currentTreatment/diamond-bullet.png);  margin-left: 250px; }
+
+.slide4 ul.subTexts li { color: #000; font-family: "Frutiger45LightBold", sans-serif; font-size: 24px !important; font-style: normal; margin-top: 20px; text-align: left; line-height: 1.2em;}
+
+.slide4 .pinkEm { color: #d9187e; font-size: 30px; text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 4px #000; }
+
+
+/* Flip Styles */
+
+.slide4 .card-container {
+	height: 240px; 
+	padding-top: 55px;
+}
+
+.slide4 .card {
+	height: 192px;
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.6s;
+}
+
+.slide4 .card .front, .card .back {	
+	position: absolute; z-index: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide4 .card .back {
+	-webkit-transform: rotateX(180deg);
+}
+/* END Current treatment stylesheet */
+
+/* Efficacy 0 stylesheet */
+.efficacy0 {
+	width: 674px; 
+	height: 413px; 
+	left: 170px; 
+	background-image: url(../images/efficacy/module.png);
+	position: absolute;
+}
+
+.efficacy_background {
+	position: absolute;
+	top: 60px;
+	width: 100%;
+	height: 716px;
+}
+.efficacy_background .ref {
+	width: 670px;
+	padding-left: 12px;
+	padding-bottom: 71px;
+	position: absolute;
+	left: 165px;
+	bottom: -23px;
+}
+
+.efficacy_background  .ref p {
+	margin-bottom: -12px;
+    font-size: 10px;
+	font-family: "FrutigerLTStd57Condensed", sans-serif;
+	color: black;
+	text-align: left;
+}
+/* END Efficacy 0 stylesheet */
+
+/* Efficacy 1 stylesheet */
+/* Slide 6.1 Styles */
+.slide61 dl.diamonds { left: 120px; position: absolute; padding-top: 50px; }
+.slide61 dl.diamonds dt:nth-child(1) { font-size: 30px; padding-top: 60px; }
+.slide61 dl.diamonds { margin: -20px 0 0 40px; }
+.slide61 dl.diamonds dt { background-image: url(../images/app/diamonds/diamond-gradient.png); font-family: "Frutiger95UltraBlackRegular", sans-serif; font-size: 17px; height: 114px; margin-top: -18px; padding-top: 65px; width: 151px; }
+.slide61 dl.diamonds dd { background: transparent url(../images/app/diamonds/ribbonShort.png) no-repeat; border: none; height: 94px; left: -76px; padding: 10px 0 0 75px; top: 14px; width: 426px; }
+.slide61 dl.diamonds dd:before { content: ""; }
+.slide61 dl.diamonds dd p, .slide61 dl.diamonds dd p em { font-size: 18px; color: #000 !important;}
+
+/* Slide 6.1 Styles */
+.slide61 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/efficacy/clotman_6.png);
+	background-position: -15px -40px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.slide61 .hideElem { display: none;}
+.slide61 .dLinks li.dSelected { background-position: 0px -80px; }
+.slide61 .dLinks { bottom: 50px; left: 10px; list-style: none; margin-left: 80px; position: absolute; }
+.slide61 .dLinks li {background: url(../images/efficacy/Diamond_Sprite.png) no-repeat; color: #48247e; float: left; font-family: "FrutigerLTStd77BlackCondensed", sans-serif; font-size: 16px; padding: 20px 8px 22px 75px;  }
+
+.slide61 .ref1 { left: 190px; position: absolute; top: 468px; }
+.slide61 .ref2 { left: 211px; position: absolute; top: 515px; }
+.slide61 .ref1 p, .slide61 .ref2 p { color: black;  font-family: "FrutigerLTStd57Condensed", sans-serif; font-size: 11px;  text-align: left; }
+
+.slide61 .module .pillars { background-color: white; bottom: -16px; float: left; left: 60px; position: absolute; width: 400px; z-index: 4; }
+
+.slide61 .module .pillars li { float: left; height: 290px; list-style-type: none; margin-left: 63px; overflow: hidden; position: relative; width: 165px; }
+.slide61 .module .pillars li:first-child { margin-left: 0px; }
+.slide61 .module .pillars li .pillar { bottom: 0; float: left; left: 0; position: absolute; }
+
+.slide61 .module .pillars li .pillar img { float: left;
+	-webkit-transition-duration: 500ms; }
+	
+.slide61 .module .pillars li.brown img {
+	-webkit-transform: translate3d(0,220px,0); }
+
+.slide61 .module .pillars li.magenta img {
+	-webkit-transform: translate3d(0,189px,0); }
+
+.slide61 .module.active .pillars li img, .endState .slide61 .module .pillars li img  {
+	-webkit-transform: translate3d(0,0,0); }
+
+.slide61 .dropArrow { left: 295px; position: absolute; top: 270px; z-index: 3;
+	-webkit-transform: translate3d(0,-101px,0);
+	-webkit-transition-duration: 500ms; }
+
+.slide61 .module.done .dropArrow, .endState .slide61 .module .dropArrow {
+	top: 309px;
+	-webkit-transform: translate3d(0,0,0); }
+
+.slide61 .dLinks { bottom: 50px; left: 10px; position: absolute; }
+
+.slide61 .legend {
+	width: 100px;
+	position: absolute;
+	top: 16px;
+	left: -107px;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-size: .9em;
+	text-align: right;
+}
+.slide61 .module .legend, .module .source {
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-weight: normal;
+}
+
+.slide61 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+/* END Efficacy 1 stylesheet */
+
+/* Efficacy stylesheet */
+/* Slide 6 Styles */
+.slide6 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/xeralto/clotman_5.png) -75px 5px no-repeat,
+	url(../images/efficacy/clotman_6.png) -15px 670px no-repeat,
+	url(../images/efficacy/clotman_7.png) 860px 345px no-repeat;
+	width: 100%;
+	height: 716px;
+}
+.slide6 #graph1 {
+	position: absolute;
+     width: 559px; height: 317px; left: 190px; background-image: url(../images/efficacy/6.0a_graph.png);
+}
+
+.slide6 .effGraphArrow { background: url(../images/efficacy/6aarrow.png) no-repeat; height: 132px; left: 690px; position: absolute; top: 10px; width: 157px;}
+.slide6 .ref1 { left: 190px; position: absolute; top: 468px; }
+.slide6 .ref2 { left: 211px; position: absolute; top: 485px; }
+.slide6 .ref1 p, .slide6 .ref2 p { color: black;  font-family: "FrutigerLTStd57Condensed", sans-serif; font-size: 11px;  text-align: left; }
+
+
+.slide6 .legend {
+	width: 100px;
+	position: absolute;
+	top: 16px;
+	left: -107px;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-size: .9em;
+	text-align: right;
+}
+.slide6 .module .legend, .module .source {
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-weight: normal;
+}
+
+.slide6 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+/* END Efficacy stylesheet */
+
+/* Home Stylesheet */
+/* Slide 1 Styles */
+.slide0 { clip:rect(0px,1024px,716px,0px); position: absolute;  top: 0px;}
+.slide0 div { height: 716px; float: left;}
+.slide0 div.frontLeg { background:url(../images/home/leg.png) no-repeat 100px 0px; width:470px;
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -webkit-transform: translate3d(0,0,0);
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.slide0 p.legTitle { left: 100px; position: absolute; text-align: left; top: 125px;}
+.slide0 div.frontSpafContainer { position: absolute; left: 465px; width: 768px;
+    -webkit-transition: -webkit-transform 2s ease-out;
+    -webkit-transform: translate3d(0,0,0); }
+.slide0 p.frontTitle { left: 53px; position: absolute; text-align: left; top: 420px;}
+.slide0 div.frontBrain  { background: url(../images/home/BrainTitleimage.png) no-repeat 50px 130px; position: absolute; width: 780px; }
+.slide0 div.frontVein { 
+	background: url(../images/home/VeinIntroimage.png) no-repeat,
+	url(../images/slide3/clotman_1.png) 642px 385px no-repeat;
+	position: absolute; 
+	left: 540px; 
+	top: 0px; 
+	width: 819px;
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    -webkit-transform: translate3d(0,0,0); 
+}
+.swipebutton {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+/* END Home Stylesheet */
+
+/* Reference popup stylesheet */
+.popupWindow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1200;
+     display: none;
+	background-image: url(../images/app/popupWindow/popup-bg.png);
+  	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+}
+.closebutton {
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 450px;
+	right: 0px;
+	background: url(../images/app/closeBTN.png) no-repeat center;
+}
+.popupWindow ul {
+	display: none;
+}
+
+.popupWindow.active {
+	display: block;
+}
+
+.popupWindow .popupContainer {
+	width: auto;
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	/*margin-top: 180px;*/
+	overflow: auto;
+	position: absolute;
+	top: 80px;
+	left: 100px;
+	background-color: white;
+	color: inherit;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+#zoomWindow {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+    display: none;
+    
+	background-image: url(../images/app/popupWindow/popup-bg.png);
+  	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+}
+
+#zoomWindow.active {
+	display: block;
+}
+
+#zoomWindow2 .popupContainer {
+	width: auto;
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	/*margin-top: 180px;*/
+	overflow: auto;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	background-color: white;
+	color: inherit;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+#zoomWindow2 .popup {
+	height: 200px;
+	width: 829px;
+	padding: 15px 0; 	/* Top and bottom padding equivalent to scroll-bar-size */
+	margin: 0 15px;		/* Left and right margin equivalent to scroll-bar-size */
+	overflow: auto;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+#zoomWindow2 {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1100;
+    display: none;
+    
+	background-image: url(../images/app/popupWindow/popup-bg.png);
+  	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+}
+
+#zoomWindow2.active {
+	display: block;
+}
+
+#zoomWindow .popupContainer {
+	width: auto;
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	/*margin-top: 180px;*/
+	overflow: auto;
+	position: absolute;
+	top: 250px;
+	left: 100px;
+	background-color: white;
+	color: inherit;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+#zoomWindow .popup {
+	height: 250px;
+	width: 829px;
+	padding: 15px 0; 	/* Top and bottom padding equivalent to scroll-bar-size */
+	margin: 0 15px;		/* Left and right margin equivalent to scroll-bar-size */
+	overflow: auto;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+
+#text {
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-left: 20px;
+}
+.popup {
+	height: 500px;
+	width: 829px;
+	padding: 15px 0; 	/* Top and bottom padding equivalent to scroll-bar-size */
+	margin: 0 15px;		/* Left and right margin equivalent to scroll-bar-size */
+	overflow: auto;
+	float: left;
+	background-color: transparent;
+	color: inherit;
+}
+
+.popup .hotkey {
+	background-color: inherit;
+	color: #c0c0c0;
+}
+.popup p {
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	/*font-weight: normal;*/
+	color: black;
+	text-align: left;
+}
+.popup .references {
+	margin-top: 52px;
+	float: left;
+	background-color: transparent;
+	font-family: "FrutigerLTStd57Condensed", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #767579;
+	text-align: left;
+}
+.popup .references li {
+	padding: 3px 120px 20px 120px;
+	list-style-type: none;
+	background-image: url(../images/references/pdf-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50px 0;
+}
+.popup .references li.none{
+	background-image: url();
+	padding: 3px 120px 20px 120px;
+	list-style-type: none;
+	background-repeat: no-repeat;
+	background-position: 50px 0;
+}
+.popup .references a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.popup .references a span {
+	margin-right: .5em;
+	float: left;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-weight: bold;
+}
+/* END Reference popup stylesheet */
+
+/* References stylesheet */
+.slide1 {
+	display: none;
+}
+
+#references1 .wrapper {
+	width: 100%;
+	height: 570px;
+	overflow: auto;
+	float: left;
+}
+
+#references1 .wrapper:after {
+	content: url(../images/references/dropshadow.png);
+	position: absolute;
+	top: 682px;
+	left: 0;
+	z-index: 5;
+}
+
+
+#references1 .references {
+	width: 100%;
+	/*height: 570px;*/
+	padding: 0;
+	margin: 0;
+	/*overflow: auto;*/
+	float: left;
+	background-color: transparent;
+	font-family: "FrutigerLTStd57Condensed", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #767579;
+	text-align: left;
+}
+
+
+#references1 .references li {
+	width: auto;
+	padding-left: 65px;
+	padding-right: 65px;
+	float: left;
+	clear: left;
+	/*padding: 6px 50px 0 120px;*/
+	list-style-type: none;
+}
+
+#references1 .references li.none {
+
+	padding: 3px 50px 20px 130px;
+	list-style-type: none;
+}
+#references1 .references .none span {
+	margin-right: .5em;
+	float: left;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: bold;
+}
+#references1 .references a {
+	width: auto;
+	min-height: 50px;
+	padding-top: 4px;
+	padding-left: 65px;
+	/*padding-right: 65px;*/
+	margin-bottom: 15px;
+	float: left;
+	clear: left;
+	background-color: transparent;
+	background-image: url(../images/references/pdf-icon.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	color: inherit;
+	text-decoration: none;
+}
+
+#references1 .references a span {
+	margin-right: .5em;
+	float: left;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: bold;
+}
+/* END References stylesheet */
+
+/* Rocket AF 0 stylesheet */
+.rocketaf1
+{
+    display: block;
+    width: 100%;
+    position: absolute;
+	background: url(../images/rocket_af/clotman_8.png);
+	background-position: 0px -423px;
+	background-repeat: no-repeat;
+    left: 0;
+}
+
+.rocketaf1 h1 {
+	margin-top:80px;
+}
+
+.rocketaf1 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.rocketaf1 .module
+{
+    position: relative;
+    top: 46px;
+    width: 800px;
+    height: 300px;
+    left: 100px;
+}
+
+.rocketaf1 .module p em
+{
+    text-align: left;
+}
+
+.rocketaf1 .fig6_1_left 
+{
+    font-family: FrutigerLTStd57Condensed;
+    font-size: 17px;
+    text-align: left;
+    position: absolute;
+    top: 16px;
+    left: 30px;
+    background-color: rgb(71,39,131);
+    color: White;
+    width: 200px;
+    height: 251px;
+    padding-top: 18px;
+    padding-left: 20px;
+    -webkit-border-radius: 10px;            
+}
+
+.rocketaf1 .fig6_1_right 
+{
+    font-family: FrutigerLTStd57Condensed;
+    font-size: 17px;
+    text-align: left;
+    position: absolute;
+    top: 1px;
+    left: -2px;
+    color: White;
+    width: 820px;
+    height: 29294px;
+    background-image: url(../images/rocket_af/1.png);
+    background-repeat: no-repeat;          
+}       
+
+.rocketaf1 .fig6_1_right p 
+{
+    width: 240px;
+    position: absolute;
+    color: #767579;
+    font-family: FrutigerLTStd77BlackCondensed, sans-serif;
+    font-size: 15px;
+    text-align: center;
+} 
+
+.rocketaf1 .fig6_1_right p.label1 
+{
+    color: #a7a7aa;
+    text-align: left;
+    top: 38px;
+}
+
+.rocketaf1 .fig6_1_right p.label2 
+{
+    color: #a7a7aa;
+    text-align: left;
+    top: 130px; 
+    left: 17px;                       
+} 
+
+.rocketaf1 .fig6_1_right p.label3 
+{
+    color: rgb(232,0,138);
+    top: 22px;    
+    left: 197px;                               
+}        
+
+.rocketaf1 .fig6_1_right p.label4 
+{
+    color: rgb(232,0,138);
+    top: 57px;  
+    left: 197px;                         
+}  
+
+.rocketaf1 .fig6_1_right p.label5 
+{
+    color: rgb(111,49,48);            
+    top: 143px;
+    left: 197px;                     
+}    
+
+.rocketaf1 .fig6_1_right p.label6 
+{
+    color: rgb(71,39,131);
+    top: 215px;
+    left: 105px;               
+}     
+
+.rocketaf1 .fig6_1_right p.label7 
+{
+    color: White;
+    font-size: 18px;   
+    -webkit-transform: rotate(90deg);   
+    top: 84px;
+    left: 357px;                                   
+}               
+
+.rocketaf1 .footnote
+{             
+    font-family: FrutigerLTStd57Condensed;
+    font-size: 11px;
+    color: rgb(51,51,51);
+    position: absolute;
+    top: 521px;
+    left: 100px;
+}                       
+/* END Rocket AF 0 stylesheet */
+
+/* Rocket AF 1 stylesheet */
+.slide6-2	{
+            display: block;
+            width: 1024px;
+            height: 699px;
+            position: relative;
+            left: 0;
+            top: 30px;
+        }
+
+		.slide6-2 h1 {
+			margin-top:40px;
+		}
+
+	.slide6-2 .module {
+			border: 1px solid #ad9cc1;
+			border-top-right-radius: 19px;
+			border-bottom-left-radius: 19px;
+			margin-bottom: 2em;
+			float: left;
+			position: relative;
+			z-index: 5;
+			background-color: white;
+			-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+		}
+
+        .slide6-2 .module
+        {
+            position: relative;
+            top: 39px;
+            width: 700px;
+            height: 360px;
+            left: 155px;
+            padding-top: 20px;
+        }
+
+        .slide6-2 .module p
+        {
+            margin-top: 20px;
+            margin-bottom: -20px;
+            text-align: left;
+            font-family: Frutiger45LightBold;
+            font-size: 24px;            
+            color: rgb(67,33,113);
+            margin-left: 45px;
+        }
+
+        .slide6-2 .module ul
+        {
+            position: relative;
+            list-style: list-style-image;
+            list-style-image: url(../images/rocket_af/ul.png);
+            padding-left: 50px;
+            margin-left: 20px;            
+        }
+
+        .slide6-2 .module li
+        {
+            font-size: 24px; 
+            font-family: FrutigerLTStd57Condensed;
+        }  
+
+        .slide6-2 .module li b
+        {            
+            font-family: FrutigerLTStd57Condensed;
+            font-weight: bold;
+        }  
+
+        .slide6-2 .footnote
+        {   
+	        font-family: FrutigerLTStd57Condensed;
+		    font-size: 11px;
+		    color: rgb(51,51,51);
+		    position: absolute;
+		    top: 516px;
+		    left: 154px;
+        }  
+
+        .slide6-2 .moduleFootnote
+        {            
+            font-family: FrutigerLTStd57Condensed;
+            font-size: 11px;
+            color: rgb(51,51,51);
+            position: absolute;
+            top: 528px;
+            left: 154px;
+        }
+/* END Rocket AF 1 stylesheet */
+
+/* Rocket AF 2 stylesheet */
+.slide6-3
+{
+    display: block;
+    width: 1024px;
+    height: 500px;
+    position: relative;
+    left: 0;
+    top: 30px;
+}
+
+.slide6-3 h1 {
+	margin-top:40px;
+	margin-bottom:30px;
+}
+
+.slide6-3 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide6-3 .module
+{
+    top: 8px;
+    width: 648px;
+    height: 410px;
+    left: 180px; 
+    background-image: url(../images/rocket_af/head.png);
+    background-repeat: repeat-x;
+}
+
+.slide6-3 .module p
+{
+	margin-top:0px;
+	font-size: 22px;
+	line-height: 22px;
+    font-family: FrutigerLTStd77BlackCondensed;
+    text-align: center;
+    padding: 12px;
+    color: White;
+}
+
+.slide6-3 table
+{
+    width: 648px;
+	position: absolute;
+	top: 206px;
+	left: 131px;
+	margin: 0 50px;
+    z-index: 100;
+    -webkit-border-horizontal-spacing: 0px;
+}
+
+.slide6-3 table tr {
+}
+
+.slide6-3 table tr td {
+	font-size: 18px;
+	line-height: 18px;
+    font-family: FrutigerLTStd77BlackCondensed;
+    vertical-align: middle;
+    padding: 14px;
+    padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px solid rgb(79,45,127);
+	white-space: nowrap;
+}
+
+.slide6-3 table tr td.xarelto
+{
+    padding: 5px;
+	font-size: 18px;
+    text-align: right;
+	padding-left: 0;
+	padding-right: 40px;
+    color: rgb(236,6,141);
+	background-repeat: no-repeat;
+	background-position: center center; 
+}
+
+.slide6-3 table tr td.tableHead 
+{
+	font-size: 22px;    
+}
+
+.slide6-3 table tr td.xarelto span
+{
+    font-size: 18px;
+}
+
+.slide6-3 table tr td p {
+	display: none;
+	color: rgb(79,45,127);
+	text-align: left;
+	font-size: 22px;
+	line-height: 22px;
+    font-family: FrutigerLTStd77BlackCondensed;
+}
+
+.slide6-3 .noborder
+{
+    border-top: none;
+}
+
+       .slide6-3 .footnote
+        {            
+            font-family: FrutigerLTStd57Condensed;
+            font-size: 11px;
+            color: rgb(51,51,51);
+            position: absolute;
+            top: 566px;
+            left: 179px;
+        }
+/* END Rocket AF 2 stylesheet */
+
+
+/* Rocket AF stylesheet */
+.rocketaf {
+	position: absolute;
+	top: 60px;
+	background: url(../images/rocket_af/clotman_8.png) 0px 294px no-repeat,
+	url(../images/rocket_af/clotman_9.png) 996px 359px no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.rocketaf h1 {
+	margin-top:40px;
+}
+
+.rocketaf .moduleClean
+{
+   height: 250px;
+    font-size: 32px;
+    font-family: 'Frutiger55RomanBold'; 
+    text-align: center;
+}
+
+.rocketaf .moduleClean b
+{
+    color: #d9187e;
+    text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 7px #000;  
+    font-family: 'Frutiger55RomanBold'; 
+}
+/* END Rocket AF stylesheet */
+
+/* Safety 0 stylesheet */
+.safety2 {
+	position: relative;
+	top: 60px;
+	width: 100%;
+	height: 716px;
+}
+.safety0 {
+	width: 691px; 
+	height: 420px; 
+	left: 165px; 
+	background-image: url(../images/efficacy/module.png);
+	background-repeat: no-repeat;
+	position: absolute;
+}
+
+.safety2 .ref.bottom {
+		width: 670px;
+	padding-left: 12px;
+	padding-bottom: 71px;
+	position: absolute;
+	left: 165px;
+	bottom: -23px;	
+}
+
+.safety2 .ref.bottom p {
+	font-family: FrutigerLTStd57Condensed;
+    font-size: 10px;
+	color: black;
+	text-align: left;
+}
+/* END Safety 0 stylesheet */
+
+/* Safety stylesheet */
+.slide7 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/rocket_af/clotman_9.png) -28px 359px no-repeat,
+	url(../images/safety/clotman_10.png) 1002px 297px no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.slide7 dl.diamonds {
+/*	margin-top: -6px; */
+	margin-top: -16px;
+	margin-left: 25px;
+}
+
+.slide7 dl.diamonds dt {
+	/*height: 76px;*/
+	width: 151px;
+	height: 109px;
+	padding-top: 55px;
+	margin-top: -18px;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: 24px;
+	background-image: url(../images/app/diamonds/diamond-gradient.png);
+	text-transform: none;
+}
+
+.slide7 dl.diamonds dt span {
+	display: block;
+	font-size: .6em;
+}
+
+.slide7 h1 {
+	margin-top:0.67em;
+	margin-bottom:20px;
+}
+
+.slide7 p em {
+	margin-top:4px;
+}
+
+.slide7 dl.diamonds dd {
+	position: relative;
+	width: 426px;
+	height: 94px;
+	border: none;
+	padding-top: 6px;
+	padding-left: 70px;
+	top: 10px;
+	left: -76px;
+	background-color: transparent;
+	background-image: url(../images/app/diamonds/ribbon.png);
+	background-repeat: no-repeat;
+}
+
+.slide7 dl.diamonds dd:before {
+	content: "";
+}
+
+.slide7 dl.diamonds dd p {
+	font-size: 18px;
+}
+
+.slide7 dl.diamonds dd p em {
+	display: block;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+.slide7 .ref {
+	width: 670px;
+	padding-left: 12px;
+	padding-bottom: 71px;
+	position: absolute;
+	left: 165px;
+/*	bottom: -23px;	*/
+	bottom: 0px;
+}
+
+.slide7 .ref p {
+	margin-bottom: -12px;
+    font-size: 10px;
+	font-family: "FrutigerLTStd57Condensed", sans-serif;
+	color: black;
+	text-align: left;
+}
+
+
+
+/*: Diamonds
+-------------------------------------------------*/
+.diamonds {
+	position: relative;
+}
+
+.diamonds a {
+	text-decoration: none;
+}
+
+dl.diamonds dt, ul.diamonds h3 {
+	/*width: 115px;
+	height: 71px;*/
+	width: 151px;
+	height: 95px;
+	padding-top: 69px;
+	margin-bottom: -10px;
+	float: left;
+	clear: left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: .9em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+dl.diamonds dd, ul.diamonds .content {
+	width: 412px;
+	height: 60px;
+	border: 1px solid #f03aa4;
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+	position: relative;
+	top: 22px;
+	left: 20px;
+	background-color: white;
+}
+
+ul.diamonds .content {
+	top: 36px;
+}
+
+dl.diamonds dd:before, ul.diamonds .content:before {
+	position: absolute;
+	top: -1px;
+	left: -40px;
+}
+
+ul.diamonds li {
+	list-style-type: none;
+}
+
+ul.diamonds .content {
+	-webkit-transform: rotateX(90deg);
+	-webkit-transition-duration: 500ms;
+}
+
+ul.diamonds li.active .content, .endState ul.diamonds li .content {
+	-webkit-transform: rotateX(0deg);
+}
+
+
+dl.diamonds dd p, ul.diamonds .content p {
+	color: black;
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	text-align: left;
+}
+
+
+dl.diamonds dd p em, ul.diamonds .content p em {
+	margin-bottom: 0;
+	display: inline;
+	/*font-family: "FrutigerLTStd77BlackCondensed", sans-serif;*/
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: left;
+}
+
+dl.diamonds dt:nth-child(1), ul.diamonds li:nth-child(1) {
+	margin-left: 30px;
+}
+
+dl.diamonds dt:nth-child(3), ul.diamonds li:nth-child(2) {
+	margin-left: 170px;
+}
+
+dl.diamonds dt:nth-child(5), ul.diamonds li:nth-child(3) {
+	margin-left: 310px;
+}
+
+dl.diamonds dt:nth-child(7), ul.diamonds li:nth-child(4) {
+	margin-left: 370px;
+}
+
+
+/*: Diamonds.wide
+-------------------------------------------------*/
+dl.diamonds.wide dt {
+	/*height: 76px;*/
+	width: 151px;
+	height: 104px;
+	padding-top: 60px;
+	margin-top: -14px;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: 24px;
+	text-transform: none;
+}
+
+dl.diamonds.wide dd {
+	width: 648px;
+}
+
+dl.diamonds.wide dd p {
+	margin-top: 4px;
+	float: left;
+	font-size: 24px;
+}
+
+dl.diamonds.wide dd img {
+	margin-top: 1px;
+	float: left;
+}
+/* END Safety stylesheet */
+
+/* Slide 4 stylesheet */
+/* Slide 4 Styles */
+.slide4 .hideElem { display: none;}
+.slide4 .boxes, .men { list-style: none; }
+.slide4 .boxes { padding: 33px 0 10px 33px; }
+.slide4 .boxes li { background: #e60087; border-radius: 15px; display: table; color: #fff; float: left; font-weight: bold; height: 53px; margin: auto 20px 22px auto; text-align: center; width: 236px; }
+.slide4 .boxes li span { display: table-cell;  vertical-align: middle; }
+.slide4 .men li {  background: url(../pages/currentTreatment/greyMan.png) no-repeat 20px 40px; float: left; height: 180px; padding: 5px; width: 70px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.6s;}
+.slide4 p.subTextMain em { font-size: 24px !important; }
+.slide4 ul.subTexts { list-style: square url(../pages/currentTreatment/diamond-bullet.png);  margin-left: 250px; }
+.slide4 ul.subTexts li { color: #000; font-family: "Frutiger45LightBold", sans-serif; font-size: 24px !important; font-style: normal; margin-bottom: 1em; text-align: left; }
+.slide4 .pinkEm { color: #d9187e; font-size: 30px; text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 4px #000; }
+
+/* Flip Styles */
+
+.slide4 .card
+{
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.6s;
+}
+.slide4 .card .front, .card .back {	position: absolute; z-index: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide4 .card .back {
+	-webkit-transform: rotateX(180deg);
+}
+/* END Slide 4 stylesheet */
+
+/* Slideshow stylesheet */
+body {
+	background-image: url(../images/app/body-background.jpg);
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.container {
+	overflow: hidden;
+}
+.referencesbutton {
+	width: 100px;
+	height: 80px;
+	position: absolute;
+	top: 690px;
+	left: 0;
+	z-index: 1200;
+}
+.footer {
+	position: absolute;
+	width: 250px;
+	height: 70px;
+	z-index: 5;
+	background: url(../images/app/xarelto-logo.png) no-repeat 80px 0px;
+	bottom: 0;
+	right: 0;
+}
+
+#wrapper {
+	position:absolute;
+	z-index:1;
+	top:0px; bottom:0; left: 0;/*top45*/
+	width:100%;
+	overflow:auto;
+	-webkit-transform: translate3d(0, 0, 0);
+}
+
+#scroller {
+	width: 19040px;
+	height:100%;
+	padding:0;
+	display: -webkit-box;
+	-webkit-box-orient: horizontal;
+}
+
+
+.slide {
+
+	width: 1024px;
+	min-height: 718px;
+	-webkit-transition: all 1s ease-out;
+    -webkit-transform: translate3d(0,0,0);
+	margin-top: 0px;/*20px*/
+}
+
+.internalwrapper {
+	position:absolute;
+	z-index:1;
+	top:0; 
+	bottom:0; 
+	left:0;
+	width:100%;
+	overflow:auto;
+	-webkit-transform: translate3d(0, 0, 0);
+
+} 
+.internalscroller {
+	width: 100%;
+	height: 4000px;
+	padding:0;
+    
+}   
+.innerslide {
+	width: 100%;
+	height: 718px;
+	float: left;
+	padding:0;
+	margin:-1px 0px;
+	-webkit-transition: all 1s ease-out;
+	-webkit-transform: translate3d(0,0,0);
+}
+
+.rocketscroller {
+	width: 100%;
+	height: 2872px;
+	padding:0;
+
+}   
+.safetyscroller {
+	width: 100%;
+	height: 8000px;
+	padding:0;
+} 
+
+.formholder {
+	position: absolute;
+	top: 20px;
+	left: 200px;
+	overflow: hidden;
+	background-color: white;
+	padding: 20px;
+}
+
+article {
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-top: 0px;
+}
+
+article.morebelow:before {
+	content: url(../images/app/arrows/down.png);
+	position: absolute;
+	left: 496px;
+	bottom: -50px;
+}
+
+article.moreabove:after {
+	content: url(../images/app/arrows/up.png);
+	position: absolute;
+	left: 496px;
+	bottom: -50px;
+}
+
+/*: Indicator-arrows: Content both below and above
+-------------------------------------------------*/
+article.morebelow.moreabove:before {
+	content: url(../images/app/arrows/down.png);
+	position: absolute;
+	left: 483px;
+	bottom: -50px;
+}
+
+article.morebelow.moreabove:after {
+	content: url(../images/app/arrows/up.png);
+	position: absolute;
+	left: 509px;
+	bottom: -50px;
+}
+/* END Slideshow stylesheet */
+
+/* Strokein AF stylesheet */
+.slide3 {
+	display: block;
+	width: 1024px;
+	height: 699px;
+	position: absolute;
+	left: 0;
+	top: 60px;
+	background: url(../images/slide3/clotman_1.png) -177px 325px no-repeat,
+	url(../images/currentTreatment/clotman_2.png) 817px 109px no-repeat,
+	url(../images/slide3/stickmen_bg.png);
+	
+}
+.slide3.off{
+background: url(../images/slide3/clotman_1.png) -177px 325px no-repeat,
+	url(../images/currentTreatment/clotman_2.png) 817px 109px no-repeat;
+	
+
+}
+
+.slide3 .module {
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: absolute;
+	display: none;
+	top: 326px;
+	width: 678px;
+	height: 235px;
+	left: 155px;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide3 .module .legend, .module .source {
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-weight: normal;
+}
+
+.slide3 .module .legend {
+	width: 100px;
+	position: absolute;
+	top: 25px;
+	left: -115px;
+	font-size: .9em;
+	text-align: right;
+}
+
+.slide3 .module .source {
+	width: 230px;
+	position: absolute;
+	top: 103%;
+	left: 25px;
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	font-size: .75em;
+}
+
+
+
+.slide3 .module ul {
+	position:
+
+relative;
+	list-style: list-style-image;
+	list-style-image: url(../images/slide3/ul.png);
+	padding-left: 50px;
+}
+
+.slide3 .module li {
+	display: none;
+	font-size: 24px;
+	/* 2011-05-12 */
+            
+
+font-family: Frutiger45LightBold;
+}
+
+.slide3Statement0 {
+	display: none;
+}
+
+.slide3 .module li b {
+	color: #d9187e;
+    font-size: 32px;
+	text-shadow: 0 -1px #fff, 1px 0 #fff, 0 1px #fff, -1px 0 #fff, 1px 1px 7px #000;
+	font-family: 'Frutiger55RomanBold';
+}
+
+.slide3 .module p em {
+	text-align: left;
+}
+
+.slide3 .module p {
+	margin-top: 70px;
+	margin-left: 30px;
+}
+
+.slide3 h1, .slide3 p.subHead {
+	width: 980px;
+    position: absolute;
+	text-align: center;
+	white-space: nowrap;
+	padding: 0;
+	margin-top: 20px;
+	z-index: 100;
+}
+
+.slide3 h1 span {
+	-webkit-user-select: none;
+}
+
+.slide3 p.subHead {
+	position: absolute;
+	top: 87px;
+    left: 0;
+}
+
+.slide3 .stickMan {
+	display: block;
+	width: 23px;
+	height: 40px;
+	position: absolute;
+	left: 15px;
+	top: 15px;
+	background-image: url(../images/slide3/stickMan.png);
+	background-repeat: no-repeat;
+	z-index: 150;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 500ms;
+/* 2011-05-15 */
+}
+
+.slide3 .stickMan .deadStickMan {
+	width: 23px;
+	height: 40px;
+	background-image: url(../images/slide3/stickMan.png);
+	
+	background-position: 0 -40px;
+	background-repeat: no-repeat;
+	-webkit-transition-property: -webkit-transform;
+	-webkit-transition-duration: 250ms;
+	-webkit-transform-style: preserve3d;
+}
+
+.slide3 .stickMan0 {
+	left: 65px;
+	top: 111px;
+	background-position: 0 -40px;
+}
+
+.slide3 .stickMan1 {
+	left: 245px;
+	/* 2011-05-12 */
+
+
+top: 34px;
+	/* 2011-05-12 */
+
+background-position: 0 -40px;
+}
+
+.slide3 .stickMan8 {
+	left: 260px;
+	top: 404px;
+}
+
+.slide3 .stickMan3 {
+	left: 267px;
+	top: 600px;
+}
+
+.slide3 .stickMan7 {
+	left: 403px;
+	top: 448px;
+}
+
+.slide3 .stickMan5 {
+	left: 529px;
+	top: 358px;
+}
+
+.slide3 .stickMan6 {
+	left: 561px;
+	top: 487px;
+}
+
+.slide3 .stickMan4 {
+	left: 649px;
+	top: 392px;
+}
+
+.slide3 .stickMan2 {
+	left: 825px;
+	top: 416px;
+}
+
+.slide3 .stickMan9 {
+	left: 920px;
+	top: 148px;
+}
+
+.foldContainer {
+	position: absolute;
+	top: 185px;
+	left: 185px;
+	list-style: none;
+	display: block;
+	padding: 0;
+	margin: 0;
+	width: 626px;
+	white-space: nowrap;
+	text-align: center;
+	z-index: 100;
+}
+
+.foldContainer li {
+	-webkit-user-select: none;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	padding: 0;
+	margin: 0;
+	display: inline-block;
+	width: 121px;
+	height: 135px;
+	overflow: hidden;
+	background-image: url(../images/slide3/fold.png);
+	background-repeat: no-repeat;
+	line-height: 130px;
+	text-align: center;
+	background-position: 0 -135px;
+	font-family: Frutiger95UltraBlackRegular;
+	/* 2011-05-11 */
+            font-size: 20px;
+	/* 2011-05-11 */
+            color: rgb(153,153,153);
+}
+
+.foldContainer li.foldButton0 {
+	background-position: 0 0
+
+;
+	color: White;
+}
+
+/*
+        .foldContainer l
+
+i.foldButton0
+        {
+            background-position: 0 0;
+            color: White;
+        }
+        */
+
+ul li.slide3Statement1, ul li.slide3Statement2, .slide3Statement0 em 
+{
+	font-size: 24px !important;
+}
+
+ul li.slide3Statement2 {
+	margin-top:-9px;
+}
+/* END Strokein AF stylesheet */
+
+/* Summary stylesheet */
+.slide9 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/administration/clotman_11.png);
+	background-position: -94px 382px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.slide9 .diamonds {
+	top: -35px;
+}
+
+.slide9 .diamonds h3 {
+	margin-bottom: -40px;
+}
+
+.slide9 .card
+{
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: 0.6s;
+}
+.slide9 .card .front, .card .back {	position: absolute; z-index: 1000;
+	-webkit-backface-visibility: hidden;
+}
+
+.slide9 .card .back {
+	-webkit-transform: rotateX(180deg);
+}
+.slide9 .diamonds {
+	position: relative;
+}
+
+.slide9 .diamonds a {
+	text-decoration: none;
+}
+
+.slide9 dl.diamonds dt, ul.diamonds h3 {
+	width: 151px;
+	height: 95px;
+	margin-top: 5px;
+	margin-bottom: -10px;
+	float: left;
+	clear: left;
+	background-color: transparent;
+	background-image: url(../images/app/diamonds/diamond-gradient.png);
+	background-repeat: no-repeat;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: .9em;
+	color: white;
+	font-weight: 400;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.slide9 dl.diamonds dd, ul.diamonds .content {
+	width: 412px;
+	height: 60px;
+	border: 1px solid #f03aa4;
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+	position: relative;
+	top: 22px;
+	left: 7px;
+	background-color: white;
+}
+
+.slide9 ul.diamonds .content {
+	top: 43px;
+}
+
+.slide9 dl.diamonds dd:before, ul.diamonds .content:before {
+	content: url(../images/app/diamonds/list-item-left.png);
+	position: absolute;
+	top: -1px;
+	left: -40px;
+}
+
+.slide9 ul.diamonds li {
+	list-style-type: none;
+}
+
+.slide9 ul.diamonds .content {
+	-webkit-transform: rotateX(90deg);
+	-webkit-transition-duration: 500ms;
+}
+
+.slide9 ul.diamonds li.active .content, .endState ul.diamonds li .content {
+	-webkit-transform: rotateX(0deg);
+}
+
+
+.slide9 dl.diamonds dd p, ul.diamonds .content p {
+	margin-top:-2px;
+	color: black;
+	font-family: "Frutiger45LightBold", sans-serif;
+	text-align: left;
+}
+
+
+.slide9 dl.diamonds dd p em, ul.diamonds .content p em {
+	margin-bottom: 0;
+	display: inline;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: left;
+}
+
+.slide9 dl.diamonds dt:nth-child(1), ul.diamonds li:nth-child(1) {
+	margin-left: 15px;
+}
+
+.slide9 dl.diamonds dt:nth-child(3), ul.diamonds li:nth-child(2) {
+	margin-left: 125px;
+}
+
+.slide9 dl.diamonds dt:nth-child(5), ul.diamonds li:nth-child(3) {
+	margin-left: 235px;
+}
+
+.slide9 dl.diamonds dt:nth-child(7), ul.diamonds li:nth-child(4) {
+	margin-left: 355px;
+}
+
+.slide9 dl.diamonds.wide dt {
+	width: 151px;
+	height: 104px;
+	padding-top: 60px;
+	margin-top: -14px;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: 24px;
+	background-image: url(../images/app/diamonds/diamond-gradient.png);
+	text-transform: none;
+}
+
+.slide9 dl.diamonds.wide dd {
+	width: 648px;
+}
+
+.slide9 dl.diamonds.wide dd p {
+	margin-top: 4px;
+	float: left;
+	font-size: 24px;
+}
+
+.slide9 dl.diamonds.wide dd img {
+	margin-top: 1px;
+	float: left;
+}
+.slide9 .foldouts li {
+	width: 267px;
+	height: 272px;
+	margin-left: 30px;
+	overflow: hidden;
+	float: left;
+	position: relative;
+	list-style-type: none;
+}
+
+.slide9 .foldouts li:first-child {
+	margin-left: 205px;
+}
+
+.slide9 .foldouts a {
+	text-decoration: none;
+}
+
+.slide9 .foldouts li h3 {
+	width: 100%;
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border: 0 solid #4e2683;
+	-webkit-border-top-right-radius: 10px;
+	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
+	background-color: #4e2683;
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.slide9 .foldouts li .content {
+	float: left;
+	position: relative;
+	z-index: 4;
+	background-color: white;
+
+	-webkit-transform: translate3d(0,-160px,0);
+	-webkit-transition-duration: 500ms;
+	-webkit-transition-timing-function: ease-out;
+}
+
+.slide9 .foldouts .active .content, .endState .foldouts .content {
+	-webkit-transform: translate3d(0,30px,0);
+}
+
+.slide9 .foldouts li ul {
+	height: 170px;
+	padding: 20px;
+	overflow: hidden;
+	float: left;
+	font-size: .8em;
+}
+
+.slide9 .foldouts .active ul, .endState .foldouts ul {
+	-webkit-transform: translate3d(0,30px,0);
+}
+
+.slide9 .foldouts li .content:after {
+	content: "";
+	width: 267px;
+	height: 30px;
+	border-bottom: 0 solid #4e2683;
+	-webkit-border-bottom-left-radius: 10px;
+	margin-bottom: 4px;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	z-index: 5;
+	background-color: #4e2683;
+
+	-webkit-box-shadow: 0 4px 4px rgba(0,0,0, 0.4);
+}
+
+.slide9 .foldouts li li {
+	width: auto;
+	height: auto;
+	border: none;
+	padding-left: 10px;
+	padding-bottom: 1em;
+	margin-left: 0;
+	background-color: transparent;
+	background-image: url(../images/app/bullet.png);
+	background-position: 0 4px;
+	background-repeat: no-repeat;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 13px;
+	color: black;
+}
+
+.slide9 .foldouts li li:after {
+	display: none;
+}
+
+.slide9 .foldouts li li:first-child {
+	margin: 0;
+}
+/* END summary stylesheet */
+
+/* Thumbnail menu stylesheet */
+.thumbnav {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 0px;
+	width: 100%;
+	background-color: transparent;
+	overflow: hidden;
+	opacity: 1;
+	z-index: 3;
+	background-image: url(../images/app/pagethumbs/background.png);
+	background-repeat: repeat-x;
+	-webkit-transition: all 0.2s ease-in;
+	-webkit-transform: translate3d(0,0,0);
+	overflow: hidden;
+}
+.branding {
+	position:  absolute;
+	right: 0;
+	top: 10px;
+	width: 230px;
+	height: 100%;
+	background-image: url(../images/app/pagethumbs/branding.png);
+}
+.thumbnav.open {
+	height: 209px;;
+}
+.thumbnav ul {
+	width: auto;
+	height: 100%;
+	position: absolute;
+	top:  -8px;
+	left: -40px;
+	float: left;
+	z-index: 4;
+	white-space: nowrap;
+}
+.thumbnav li {
+	padding-top: 33px;
+	width: 175px;
+	height: 100%;
+	position: relative;
+	left: 0;
+	float: left;
+	display: block;
+	list-style-type: none;
+}
+.thumbnav li.current {
+	background-image: url(../images/app/pagethumbs/current.png);
+}
+/* END Thumbnail menu stylesheet */
+
+/* Top menu stylesheet */
+.topnav {
+	position:absolute; 
+	width: 1210px;
+    z-index: 2;
+	top: -200px;
+	left: -30px;
+	height: 45px;
+    -webkit-transition: all 1s ease-out;
+	-webkit-transform: translate3d(0,0,0);
+	padding: 0;
+	margin: 0;
+
+}
+.topnav ul {
+	position:absolute;
+	top:  -15px;
+}
+.topnavwrapper {
+	position:absolute;
+    z-index: 2;
+	top:0; bottom:0; left: 0;/*top45*/
+	width:100%;
+	height: 45px;
+	overflow:auto;
+    -webkit-transform: translate3d(0, 0, 0);
+	background-color: #ff5240;
+}
+
+.topnav.open{
+	top: 10px; 
+}
+.topnav li:nth-child(1) {
+	margin-left: 0px;
+}
+.topnav li.react {
+	background-color: #767579;
+}
+.topnav li {
+	-webkit-box-sizing:border-box;
+	height: 43px;
+    padding: 14px 20px 0 20px;
+    font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+	-webkit-border-top-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	margin-left: 5px;
+	overflow: hidden;
+	float: left;
+	display: block;
+	background-image: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+}
+.topnav .home {
+	height: 44px;
+	width: 50px;
+	border: none;
+	background-image: url(../images/app/navigation/home-sprite.png), -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+	background-repeat: no-repeat;
+	background-position: -10px 0, 0 0;
+}
+.topnav .active{
+	background-image: url(../images/app/navigation/nav-selected.png), -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+	background-repeat: repeat-x;
+}
+.topnav .home.active{
+	background: url(../images/app/navigation/home-sprite.png), url(../images/app/navigation/nav-selected.png), -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		color-stop(0, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(174,174,174, 1)),
+		color-stop(0.5, rgba(136,136,136, 1)),
+		color-stop(1, rgba(136,136,136, 1))
+	);
+	background-repeat: no-repeat, repeat-x;
+    background-position: -10px 0, 0 0, 00;
+}
+/* END Top menu stylesheet */
+
+/* Typography stylesheet */
+/*	Fonts	*/
+@font-face {
+	font-family: 'MetaPlusNormalRoman';
+	src: local('MetaPlusNormal'), local('MetaPlusNormalRoman'), url('metanr__-webfont.svg#webfont6jemC0yo') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MetaPlusMediumRoman';
+	src: local('MetaPlusMedium'), local('MetaPlusMediumRoman'), url('metamr__-webfont.svg#webfontfl6EqD88') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MetaPlusNormalCapsItalic';
+	src: local('MetaPlusNormal'), local('MetaPlusNormalCapsItalic'), url('metanci_-webfont.svg#webfontee1vQ0yz') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* Generated by Font Squirrel (http://www.fontsquirrel.com) on May 9, 2011 */
+@font-face {
+    font-family: 'Frutiger45LightBold';
+    src: url('../fonts/ftb____0-webfont.eot');
+    src: url('../fonts/ftb____0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ftb____0-webfont.woff') format('woff'),
+         url('../fonts/ftb____0-webfont.ttf') format('truetype'),
+         url('../fonts/ftb____0-webfont.svg#Frutiger45LightBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FrutigerLTStd77BlackCondensed';
+    src: url('../fonts/frutigerltstd-blackcn-webfont.eot');
+    src: url('../fonts/frutigerltstd-blackcn-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutigerltstd-blackcn-webfont.woff') format('woff'),
+         url('../fonts/frutigerltstd-blackcn-webfont.ttf') format('truetype'),
+         url('../fonts/frutigerltstd-blackcn-webfont.svg#FrutigerLTStd77BlackCondensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger55RomanBold';
+    src: url('../fonts/ftbl____-webfont.eot');
+    src: url('../fonts/ftbl____-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ftbl____-webfont.woff') format('woff'),
+         url('../fonts/ftbl____-webfont.ttf') format('truetype'),
+         url('../fonts/ftbl____-webfont.svg#Frutiger55RomanBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger55RomanRegular';
+    src: url('../fonts/frutiger_55_roman_regular-webfont.eot');
+    src: url('../fonts/frutiger_55_roman_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutiger_55_roman_regular-webfont.woff') format('woff'),
+         url('../fonts/frutiger_55_roman_regular-webfont.ttf') format('truetype'),
+         url('../fonts/frutiger_55_roman_regular-webfont.svg#Frutiger55RomanRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Frutiger95UltraBlackRegular';
+    src: url('../fonts/frutiger_95_ultrablack_regular-webfont.eot');
+    src: url('../fonts/frutiger_95_ultrablack_regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutiger_95_ultrablack_regular-webfont.woff') format('woff'),
+         url('../fonts/frutiger_95_ultrablack_regular-webfont.ttf') format('truetype'),
+         url('../fonts/frutiger_95_ultrablack_regular-webfont.svg#Frutiger95UltraBlackRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'FrutigerLTStd57Condensed';
+    src: url('../fonts/frutiger_57_light_condensed-webfont.eot');
+    src: url('../fonts/frutiger_57_light_condensed-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/frutiger_57_light_condensed-webfont.woff') format('woff'),
+         url('../fonts/frutiger_57_light_condensed-webfont.ttf') format('truetype'),
+         url('../fonts/frutiger_57_light_condensed-webfont.svg#FrutigerLTStd57Condensed') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*	Overall typography	*/
+h1 {
+	/*height: 98px;*/
+	margin-bottom: 22px;
+	background-color: transparent;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 28px;
+	/*color: #311856;*/
+	color: #48247e;
+	text-align: center;
+}
+
+h1 a {
+	text-decoration: none;
+	color: inherit;
+}
+
+p {
+	margin-bottom: 1em;
+	background-color: transparent;
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	color: #767579;
+	text-align: center;
+}
+
+p em {
+	margin-top: 12px;
+	margin-bottom: 1em;
+	display: block;
+	background-color: transparent;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 19px;
+	/*font-weight: normal;*/
+	font-style: normal;
+	font-weight: bold;
+	color: #d9187e;
+	text-align: center;
+
+}
+
+p em em {
+	display: inline;
+	font-family: "FrutigerLTStd77BlackCondensed", sans-serif;
+	font-size: 1.2em;
+}
+
+p em span {
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	font-weight: normal;
+	font-size: .95em;
+}
+
+sup {
+	font-size: 50%;
+}
+/* END Typography stylesheet */
+
+/* Xeralto stylesheet */
+.slide5 {
+
+	position: absolute;
+
+	top: 60px;
+	background: url(../images/xeralto/clotman_4.png) 486px 611px no-repeat,
+	url(../images/xeralto/clotman_5.png) 950px 5px no-repeat,
+	url(../images/currentTreatment/clotman_3.png) -186px 111px no-repeat;
+
+	width: 100%;
+
+	height: 716px;
+
+}
+
+#xarelto_slide2 .content-wrapper {
+	position: absolute;
+
+	top: 60px;
+	background: url(../images/xeralto/clotman_4.png);
+	background-position: 486px -105px;
+	background-repeat: no-repeat;
+
+	width: 100%;
+
+	height: 716px;
+}
+
+.slide5 .module p
+{
+
+	font-size: 22px;
+	line-height: 22px;
+    font-family: FrutigerLTStd77BlackCondensed;
+    text-align: center;
+    margin: 11px;
+    color: White;
+}
+
+.slide5 .module {
+	top: 25px;
+	width: 650px;
+	height: 410px;
+	left: 183px; /* 2011-05-12 #2 */
+	background-image: url(../images/xeralto/head.png);
+	background-repeat: repeat-x;
+
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide5 .dragdealer {
+	float: left;
+	width: 64px;
+	height: 520px;
+	position: absolute;
+	top: 130px;
+	left: 112px;
+	opacity: .7;
+	background-color: transparent;
+	background-image: url(../images/xeralto/pilldock.png);
+	background-repeat: no-repeat;
+	background-position: center 20px;
+}
+.slide5 .dragdealer .handle {
+	position: absolute;
+	cursor: pointer;
+	width: 64px;
+	height: 64px;
+	background-image: url(../images/xeralto/pill.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.slide5 table
+
+{
+    width: 650px;
+	position: absolute;
+	top: 150px;
+	left: 134px; 
+	margin: 0 50px;
+    z-index: 100;
+    -webkit-border-horizontal-spacing: 0px;
+}
+.slide5 table tr {
+}
+
+.slide5 table tr td {
+	font-size: 18px;
+	line-height: 18px;
+    font-family: FrutigerLTStd77BlackCondensed;
+    vertical-align: middle;
+    padding: 14px;
+    padding-top: 15px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border-top: 1px solid rgb(79,45,127);
+	white-space: nowrap;
+}
+
+.slide5 table tr td.warfarin
+{
+    padding: 5px;
+	font-size: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
+    vertical-align: bottom;
+    text-align: center;
+		color: #6d302f;
+	background-repeat: no-repeat; /* 2011-05-15 */
+	background-position: center center; /* 2011-05-15 */
+}
+
+.slide5 table tr td.xarelto
+{
+    padding: 1px;
+	font-size: 22px;
+	padding-left: 20px;
+	padding-right: 20px;
+    vertical-align: bottom;
+    text-align: center;
+    color: rgb(236,6,141);
+	background-repeat: no-repeat; /* 2011-05-15 */
+	background-position: center center;  /* 2011-05-15 */
+}
+
+.slide5 table tr td.warfarin span, .slide5 table tr td.xarelto span
+{
+    font-size: 18px;
+}
+
+.slide5 table tr.voodoo td.warfarin.stateChecked {
+	background-image: url(../images/xeralto/check0.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.slide5 table tr.voodoo td.xarelto.stateChecked {
+	background-image: url(../images/xeralto/check1.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.slide5 table tr td p {
+	display: none;
+	color: rgb(79,45,127);
+	text-align: left;
+	font-size: 22px;
+	line-height: 22px;
+    font-family: FrutigerLTStd77BlackCondensed;
+}
+
+.slide5 table tr.voodoo td p {
+	display: block;
+}
+
+.slide5 table tr td.endStatement
+{
+    padding-top: 20px; /* 2011-05-11 */
+    background-color: transparent;
+    border-top: none;
+}
+
+.slide5 table tr td.endStatement p  /* 2011-05-11 */
+{
+    line-height: 30px;
+}
+
+.slide5 .noborder
+{
+    border-top: none;
+}
+/* END Xeralto stylesheet */

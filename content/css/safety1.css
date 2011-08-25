@@ -1,0 +1,216 @@
+.slide7 {
+	position: absolute;
+	top: 60px;
+	background: url(../images/rocket_af/clotman_9.png) -28px 359px no-repeat,
+	url(../images/safety/clotman_10.png) 1002px 297px no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.slide7 dl.diamonds {
+/*	margin-top: -6px; */
+	margin-top: -16px;
+	margin-left: 25px;
+}
+
+.slide7 dl.diamonds dt {
+	/*height: 76px;*/
+	width: 151px;
+	height: 109px;
+	padding-top: 55px;
+	margin-top: -18px;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: 24px;
+	background-image: url(../images/app/diamonds/diamond-gradient.png);
+	text-transform: none;
+}
+
+.slide7 dl.diamonds dt span {
+	display: block;
+	font-size: .6em;
+}
+
+.slide7 h1 {
+	margin-top:0.67em;
+	margin-bottom:20px;
+}
+
+.slide7 p em {
+	margin-top:4px;
+}
+
+.slide7 dl.diamonds dd {
+	position: relative;
+	width: 426px;
+	height: 94px;
+	border: none;
+	padding-top: 6px;
+	padding-left: 70px;
+	top: 10px;
+	left: -76px;
+	background-color: transparent;
+	background-image: url(../images/app/diamonds/ribbon.png);
+	background-repeat: no-repeat;
+}
+
+.slide7 dl.diamonds dd:before {
+	content: "";
+}
+
+.slide7 dl.diamonds dd p {
+	font-size: 18px;
+}
+
+.slide7 dl.diamonds dd p em {
+	display: block;
+	font-family: "Frutiger45LightBold", sans-serif;
+	font-size: 20px;
+	color: black;
+}
+
+.slide7 .ref {
+	width: 670px;
+	padding-left: 12px;
+	padding-bottom: 71px;
+	position: absolute;
+	left: 165px;
+/*	bottom: -23px;	*/
+	bottom: 0px;
+}
+
+.slide7 .ref p {
+	margin-bottom: -12px;
+    font-size: 10px;
+	font-family: "FrutigerLTStd57Condensed", sans-serif;
+	color: black;
+	text-align: left;
+}
+
+
+
+/*: Diamonds
+-------------------------------------------------*/
+.diamonds {
+	position: relative;
+}
+
+.diamonds a {
+	text-decoration: none;
+}
+
+dl.diamonds dt, ul.diamonds h3 {
+	/*width: 115px;
+	height: 71px;*/
+	width: 151px;
+	height: 95px;
+	padding-top: 69px;
+	margin-bottom: -10px;
+	float: left;
+	clear: left;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: .9em;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+dl.diamonds dd, ul.diamonds .content {
+	width: 412px;
+	height: 60px;
+	border: 1px solid #f03aa4;
+	padding-top: 20px;
+	padding-left: 10px;
+	float: left;
+	position: relative;
+	top: 22px;
+	left: 20px;
+	background-color: white;
+}
+
+ul.diamonds .content {
+	top: 36px;
+}
+
+dl.diamonds dd:before, ul.diamonds .content:before {
+	position: absolute;
+	top: -1px;
+	left: -40px;
+}
+
+ul.diamonds li {
+	list-style-type: none;
+}
+
+ul.diamonds .content {
+	-webkit-transform: rotateX(90deg);
+	-webkit-transition-duration: 500ms;
+}
+
+ul.diamonds li.active .content, .endState ul.diamonds li .content {
+	-webkit-transform: rotateX(0deg);
+}
+
+
+dl.diamonds dd p, ul.diamonds .content p {
+	color: black;
+	font-family: "Frutiger55RomanRegular", sans-serif;
+	text-align: left;
+}
+
+
+dl.diamonds dd p em, ul.diamonds .content p em {
+	margin-bottom: 0;
+	display: inline;
+	/*font-family: "FrutigerLTStd77BlackCondensed", sans-serif;*/
+	font-family: "Frutiger55RomanBold", sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	text-align: left;
+}
+
+dl.diamonds dt:nth-child(1), ul.diamonds li:nth-child(1) {
+	margin-left: 30px;
+}
+
+dl.diamonds dt:nth-child(3), ul.diamonds li:nth-child(2) {
+	margin-left: 170px;
+}
+
+dl.diamonds dt:nth-child(5), ul.diamonds li:nth-child(3) {
+	margin-left: 310px;
+}
+
+dl.diamonds dt:nth-child(7), ul.diamonds li:nth-child(4) {
+	margin-left: 370px;
+}
+
+
+/*: Diamonds.wide
+-------------------------------------------------*/
+dl.diamonds.wide dt {
+	/*height: 76px;*/
+	width: 151px;
+	height: 104px;
+	padding-top: 60px;
+	margin-top: -14px;
+	font-family: "Frutiger95UltraBlackRegular", sans-serif;
+	font-size: 24px;
+	text-transform: none;
+}
+
+dl.diamonds.wide dd {
+	width: 648px;
+}
+
+dl.diamonds.wide dd p {
+	margin-top: 4px;
+	float: left;
+	font-size: 24px;
+}
+
+dl.diamonds.wide dd img {
+	margin-top: 1px;
+	float: left;
+}

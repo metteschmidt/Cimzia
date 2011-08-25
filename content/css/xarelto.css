@@ -1,0 +1,281 @@
+.slide5 {
+
+	position: absolute;
+
+	top: 60px;
+	background: url(../images/xeralto/clotman_4.png) 586px 581px no-repeat,
+	url(../images/currentTreatment/clotman_3.png) -186px 111px no-repeat;
+
+	width: 100%;
+
+	height: 716px;
+
+}
+
+#xarelto_slide2 .content-wrapper {
+	position: absolute;
+	top: 60px;
+	background: url(../images/xeralto/clotman_4.png);
+	background-position: 586px -135px;
+	background-repeat: no-repeat;
+	width: 100%;
+	height: 716px;
+}
+
+.slide5 .module p
+{
+
+	font-size: 22px;
+	line-height: 22px;
+    font-family: FrutigerLTStd77BlackCondensed;
+    text-align: center;
+    margin: 11px;
+    color: White;
+}
+
+.slide5 .module {
+	top: 25px;
+	width: 650px;
+	height: 410px;
+	left: 183px; /* 2011-05-12 #2 */
+	background-image: url(../images/xeralto/head.png);
+	background-repeat: repeat-x;
+
+	border: 1px solid #ad9cc1;
+	border-top-right-radius: 19px;
+	border-bottom-left-radius: 19px;
+	margin-bottom: 2em;
+	float: left;
+	position: relative;
+	z-index: 5;
+	background-color: white;
+	-webkit-box-shadow: 0 6px 6px rgba(0,0,0, 0.4);
+}
+
+.slide5 .dragdealer {
+	float: left;
+	width: 64px;
+	height: 520px;
+	position: absolute;
+	top: 130px;
+	left: 112px;
+	opacity: .7;
+	background-color: transparent;
+	background-image: url(../images/xeralto/pilldock.png);
+	background-repeat: no-repeat;
+	background-position: center 20px;
+}
+.slide5 .dragdealer .handle {
+	position: absolute;
+	cursor: pointer;
+	width: 64px;
+	height: 64px;
+	background-image: url(../images/xeralto/pill.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.slide5 table
+
+{
+    width: 650px;
+	position: absolute;
+	top: 150px;
+	left: 134px; 
+	margin: 0 50px;
+    z-index: 100;
+    -webkit-border-horizontal-spacing: 0px;
+}
+
+
+
+.slide5 table tr {
+
+
+
+}
+
+
+.slide5 table tr td {
+
+	font-size: 18px;
+
+	line-height: 18px;
+
+    font-family: FrutigerLTStd77BlackCondensed;
+
+    vertical-align: middle;
+
+    padding: 14px;
+
+    padding-top: 15px;
+
+	padding-left: 20px;
+
+	padding-right: 20px;
+
+	border-top: 1px solid rgb(79,45,127);
+
+	white-space: nowrap;
+
+}
+
+
+.slide5 table tr td.warfarin
+
+{
+
+    padding: 5px;
+
+	font-size: 22px;
+
+
+
+	padding-left: 20px;
+
+	padding-right: 20px;
+
+    vertical-align: bottom;
+
+    text-align: center;
+
+		color: #6d302f;
+
+	background-repeat: no-repeat; /* 2011-05-15 */
+
+	background-position: center center; /* 2011-05-15 */
+
+}
+
+
+
+.slide5 table tr td.xarelto
+
+{
+
+    padding: 1px;
+
+	font-size: 22px;
+
+
+
+	padding-left: 20px;
+
+	padding-right: 20px;
+
+    vertical-align: bottom;
+
+    text-align: center;
+
+    color: rgb(236,6,141);
+
+	background-repeat: no-repeat; /* 2011-05-15 */
+
+	background-position: center center;  /* 2011-05-15 */
+
+}
+
+
+.slide5 table tr td.warfarin span, .slide5 table tr td.xarelto span
+
+{
+
+    font-size: 18px;
+
+}
+
+
+
+.slide5 table tr.voodoo td.warfarin.stateChecked {
+
+	background-image: url(../images/xeralto/check0.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center center;
+
+}
+
+
+
+.slide5 table tr.voodoo td.xarelto.stateChecked {
+
+	background-image: url(../images/xeralto/check1.png);
+
+	background-repeat: no-repeat;
+
+	background-position: center center;
+
+}
+
+
+
+.slide5 table tr td p {
+
+	display: none;
+
+	color: rgb(79,45,127);
+
+	text-align: left;
+
+	font-size: 22px;
+
+	line-height: 22px;
+
+    font-family: FrutigerLTStd77BlackCondensed;
+
+}
+
+
+
+.slide5 table tr.voodoo td p {
+
+	display: block;
+
+}
+
+
+.slide5 table tr td.endStatement
+
+{
+
+    padding-top: 20px; /* 2011-05-11 */
+
+    background-color: transparent;
+
+    border-top: none;
+
+}
+
+.slide5 table tr td.endStatement p  /* 2011-05-11 */
+
+{
+
+    line-height: 30px;
+
+}
+
+
+
+.slide5 .noborder
+
+{
+
+    border-top: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
