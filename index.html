@@ -9,990 +9,107 @@
   <!-- disable numbers becoming dialable -->
   <meta name="format-detection" content="telephone=no" />
 
-  <link rel="stylesheet" href="content/css/slideshow.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/thumbnailmenu.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/topmenu.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/referencepopup.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/typography.css" type="text/css" charset="utf-8">
-   	  
-  <link rel="stylesheet" href="content/css/home.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/current_treatment.css" type="text/css" charset="utf-8">
- 
-  <link rel="stylesheet" href="content/css/references.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/efficacy.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/efficacy0.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/efficacy1.css" type="text/css" charset="utf-8">
-   
-  <link rel="stylesheet" href="content/css/rocket_af.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/rocket_af0.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/rocket_af1.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/rocket_af2.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/stroke_in_af.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/xeralto.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/safety.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/safety0.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/administration.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/summary.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/cover.css" type="text/css" charset="utf-8">
-  <link rel="stylesheet" href="content/css/moa.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/slideshow.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/thumbnailmenu.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/topmenu.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="css/referencepopup.css" type="text/css" charset="utf-8">
   
- <script type="text/javascript" src="viewer/js/monitor.js"></script>
- <script src="../viewer/js/pdf.js"></script>
+  <link rel="stylesheet" href="content/css/typography.css" type="text/css" charset="utf-8">
+  <link rel="stylesheet" href="content/css/cover.css" type="text/css" charset="utf-8">
+   
+  <script type="text/javascript" src="viewer/js/monitor.js"></script>
+  <script src="../viewer/js/pdf.js"></script>
   
   <script type="text/javascript" src="ALF/lib/zepto.js"></script>
-  <script type="text/javascript" src="ALF/lib/iscroll.js"></script>
-  <script type="text/javascript" src="ALF/controller/slidescontroller.js"></script>
-  <script src="ALF/lib/slidescroller.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="ALF/utils/dispatchEvent.js"></script>
   <script type="text/javascript" src="ALF/lib/touchy.js"></script>
+  <script type="text/javascript" src="ALF/utils/utils.js"></script>
  
+  <script type="text/javascript" src="ALF/controller/slidesnavcontroller.js"></script>
+  <script type="text/javascript" src="ALF/controller/slidescroller.js"></script>
   <script type="text/javascript" src="ALF/model/model.js"></script>
-  <script type="text/javascript" src="ALF/view/slides.js"></script> 
+  <script type="text/javascript" src="ALF/view/slides.js"></script>
+  <script type="text/javascript" src="ALF/view/navigation.js"></script> 
+  
+  <script type="text/javascript" src="ALF/utils/drag.js"></script> 
 
-  <script type="text/javascript" src="ALF/view/navigation.js"></script>
-  <script type="text/javascript" src="ALF/controller/navigationcontroller.js"></script>
-  <script type="text/javascript" src="ALF/controller/thumbcontroller.js"></script>
-  <script type="text/javascript" src="ALF/controller/slidescontroller.js"></script>
+  <script type="text/javascript" src="ALF/controller/menunavcontroller.js"></script>
+  <script type="text/javascript" src="ALF/controller/thumbnavcontroller.js"></script>
   <script type="text/javascript" src="ALF/controller/footercontroller.js"></script>
   
   <script type="text/javascript" src="ALF/view/thumbnavigation.js"></script>
-  <script type="text/javascript" src="ALF/view/footer.js"></script>
-  <script type="text/javascript" src="ALF/view/footer.js"></script>
- 
+  <script type="text/javascript" src="ALF/view/footer.js"></script> 
  
   <script type="text/javascript" src="ALF/utils/include.js"></script>
-  <script type="text/javascript" src="ALF/utils/gesture.js"></script>
   <script type="text/javascript" src="ALF/appinit.js"></script>
   
-  <script type="text/javascript">	 
-		 
-	 var model = new Model();
-	 var slideShow = new SlideShow();
-	 var app = new App();
+  <script type="text/javascript">
+	 var path = 'content/slides/';
+	 var jspath = 'content/js/';
+	 var csspath = 'content/css/';
 	 
-	 function init() {
-	 		  
-		model.dynamic = false;
+	 var slidesarray = [['home'],
+	                    ['pas', 'syringe', 'induction_dose', 'molecule'],
+	                    ['week_52', 'week_0-6_7-12', 'week_12', 'week_1'],
+	                    ['x-ray_data_withdrawers','x-ray_data_responders', 'probability', 'nice_criteria'],
+	                    ['malignancies','infections', 'common_ae', 'history'],
+	                    ['das28','haq-di'],
+	                    ['injection_site_pain', 'productivity_home', 'productivity_work', 'sf-36', 'pain_and_fatigue'],
+	                    ['nice', 'dosing', 'syringe'],
+	                    ['end']];
+	 
+	 var topmenuarray = ['Start','Innovation','Rapid Response','Rapid Decision','Safety','Long Term Data','Quality of Life','Administration','Exit'];
+	 
+	 var utils = new Utils();
+	 
+	 for(var i = 0; i<slidesarray.length; i++) {
+	     if(slidesarray[i].length > 1) {
+	        for(var col = 0; col<slidesarray[i].length; col++){  
+	             utils.includeCSS(slidesarray[i][col]);
+	         }
+	      } else if(slidesarray[i].length == 1){
+	             utils.includeCSS(slidesarray[i]);
+	      }
+	 }	 
+	 var model = new Model();
+	 var app = new App();
+	 var slideShow = new SlideShow();
+	 
+	 function init() {		  
+
+		model.dynamic = true;
 		app.init();
 		slideShow.init = true;
+		//new DragElement(document.getElementById('debugdiv'),'100','500');
 		//monitoringEnabled = true;
-	    //gestures.addSwipeListener('swipebutton');
-	    document.addEventListener('swipeleft', function() {console.log('I heard a swipeleft'); model.swipe = true});
-	   } 
-	   document.ontouchmove = function(e){
+	    document.addEventListener('swipeleft', function(){model.swipe = true});
+	  } 
+	 document.ontouchmove = function(e){
 	     e.preventDefault();
-	   };    	   
+	  }    	   
   	   window.addEventListener('load',init, false);
 	</script>
   
 
-<title>Bayer Xarelto</title>
+<title>Cimzia</title>
   
 </head>
 <body>
+<div id="debugdiv" class="debugdiv">Debug:</div>
 <div id="container" class="container">
 <div id="topnavwrapper">
-
-   <nav id="topnav" class="topnav">
-	  <ul id="nav">
-	  	<li>References</li>
-	  	<li id="homebutton" class="home"></li>
-	  	<li>Stroke in AF</li>
-	  	<li>Current Treatment</li>
-	  	<li>Xarelto<sup>&reg;</sup></li>
-	  	<li>Rocket AF</li>
-	  	<li>Efficacy</li>
-	  	<li>Safety</li>
-	  	<li>Administration</li>
-	  	<li>Summary</li>
-	  </ul>   
-   </nav>
- 
-  </div> 
+</div> 
   
    <div id="wrapper">
-   <!--<div id="test">test</div>-->
-   <div id="scroller">
+    <div id="scroller">
    
-   <section id="references_section" class="slide">
-	<article id="references1" data-monitorId="References">
-	<div id="referencecontent" class="slide1">
-		<h1>SPAF References library</h1>
-		  <div class="wrapper">
-			  <ul class="references scroller">
-			    <li>
-				<a href="javascript:openPDF('docs/Ref01_Di_Carlo-Humanandeconomicburdenofstroke.pdf');"><span>1.</span>
-					Di Carlo A. Human and economic burden of stroke. Age Ageing. 2009;38(1):4-5. </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref02_Kannel-PrevalenceincidencePrognosis.pdf');"><span>2.</span>
-				  Kannel WB, Wolf PA, Benjamin EJ, et al. Prevalence, incidence, prognosis, and predisposing conditions for atrial fibrillation:
-				  population-based estimates. Am J Cardiol. 1998;82(8A):2N-9N. </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref03_Marinietal-ContributionofAtrialFibrillationtoIncidenceandOutcomeofIschemicStroke.pdf');"><span>3.</span>
-				  Marini C, De Santis F, Sacco S, et al. Contribution of atrial fibrillation to incidence and outcome of ischemic stroke: results from a population-based study. Stroke.
-				  2005;36(6):1115-1119.</a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref04_Gladstone-PotentiallyPreventableStrokesinHigh-RiskPatientsWithAtrialFibrillation.pdf');"><span>4.</span>
-				   Gladstone DJ, Bui E, Fang J, et al. Potentially preventable strokes in high-risk patients with atrial fibrillation who are not adequately anticoagulated. Stroke. 2009;40(1):235-240. </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref05_Warfarin_SPC.pdf');"><span>5.</span>
-					Warfarin [summary of product
-					characteristics]. Frimley, Camberley, Surrey, United Kingdom: Sandoz Ltd; October 2010. </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref06_Waldo-HospitalizedPatientsWithAtrialFibrillationandaHighRiskofStroke.pdf');"><span>6.</span>
-				 Waldo AL, Becker RC, Tapson VF, et al; NABOR Steering Committee. Hospitalized patients with atrial fibrillation and a high risk of stroke are not being provided with adequate anticoagulation. J Am Coll Cardiol. 2005;46(9):1729-1736.
-				 </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/7.pdf');"><span>7.</span>
-				   Xarelto [summary of product characteristics], draft. Leverkusen, Germany: Bayer HealthCare AG; December 2010.</a> 
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref08_Perzborn-Thediscoveryanddevelopmentofrivaroxaban.pdf');"><span>8.</span>
-		         Perzborn E, Roehrig S, Straub A, et al. The discovery and development of rivaroxaban, an oral, direct factor Xa inhibitor. Nat Rev Drug Discov. 2010;10(1):61-75.
-				</a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref09_Perzborn-Invitroandinvivostudiesofthenovelantithromboticagent.pdf');"><span>9.</span>
-				 Perzborn E, Strassburger J, Wilmen A, et al. In vitro and in vivo studies of the novel antithrombotic
-				   agent BAY 59-7939—an oral, direct factor Xa inhibitor. J Thromb Haemost. 2005;3(3):514-521. </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref10_Weitz-Newanticoagulants.pdf');"><span>10.</span>
-				   Weitz JI, Bates SM. New anticoagulants. J Thromb Haemost. 2005;3(8):1843-1853.</a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref11_DesignRocketAF.pdf');"><span>11.</span>
-				  The Executive Steering Committee, on
-				  behalf of the ROCKET AF Study Investigators. Rivaroxaban—once daily, oral, direct factor Xa inhibition compared with vitamin K antagonism for prevention of stroke and embolism trial in atrial fibrillation: rationale and design of
-				  the ROCKET AF study. Am Heart J. 2010;159(3):340-347. </a>
-				</li>
-				<li class="none">
-				 <span>12.</span>
-				  Data on file. Bayer HealthCare AG, Berlin, Germany.
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref13_Hacke-BaselinecharacteristicsofROCKETAFstudy.pdf');"><span>13.</span>
-				  Hacke W, Patel MR, Becker RC, et al. Baseline characteristics of the ROCKET AF study: comparison with recent
-				  atrial fibrillation studies. Abstract OAID 5 presented at the 19th European Stroke Conference (ESC); May 25-28, 2010: Barcelona, Spain 2010.
-				  </a>
-				</li>
-				<li>
-				<a href="javascript:openPDF('docs/Ref14_EuropeanHeartRhythmAssociation.pdf');"><span>14.</span>
-				 European Heart Rhythm Association; Heart Rhythm Society, Fuster V, et al. ACC/AHA/
-				 ESC 2006 guidelines for the management of patients with atrial fibrillation—executive summary: a report of the American College of Cardiology/American Heart Association Task Force on Practice Guidelines and the European Society of
-				 Cardiology Committee for Practice Guidelines (Writing Committee to Revise the 2001 Guidelines for the Management of Patients With Atrial Fibrillation). J Am Coll Cardiol. 2006;48(4):854-906. 
-				  </a>
-				</li>
-				<li>
-				 <a href="javascript:openPDF('docs/Ref15_Kubitza-Safetypharmacodynamics.pdf');"><span>15.</span>
-				  Kubitza D, Becka M, Wensing G,
-				  et al. Safety, pharmacodynamics, and pharmacokinetics of BAY 59-7939—an oral, direct factor Xa inhibitor—after multiple dosing in healthy male subjects. Eur J Clin Pharmacol. 2005;61(12):873-880.</a>
-				</li>
-			</ul>
-		</div>
-		</div>
-		
-	 </article>
-	 </section>
-	  
-	  <section id="home_section" class="slide">  
-	  	 <article id="home1" data-monitorId="Treatment of Venous Thromboembolism">
-	  	   <div class="slide0" id="home">
-	  	   <div class="frontLeg"><p class="legTitle">Treatment of<br />Venous Thromboembolism</p></div>
-	  	   <div class="frontSpafContainer">
-	  	   <div class="frontBrain"><img src="content/images/home/shadowDividingline.png" /></div>
-	  	   <p class="frontTitle">Stroke Prevention<br />for Patients with Atrial Fibrillation</p>
-	  	   <div class="frontVein"><br /></div>
-	  	   </div>
-	  	   </div>
-	  	</article>
-	   </section>
-	   	   
-	   <section id="stroke_in_af_section" class="slide">
-	   			<article id="stroke_in_af" data-monitorId="Stroke Disables and Kills Millions Worldwide">
-	   			   <div class="slide3" id="stroke_stickmen">
-	   				  <h1>
-	   			   <span>Stroke Disables and Kills<br/>
-	   			   Millions Worldwide<sup>1</sup></span>
-	   		   </h1>
-	   	
-	   		   <p class="subHead">
-	   		   <em>
-	   			   Patients with atrial fibrillation (AF) have an<br/>
-	   			   increased risk of stroke compared with the general population<sup>2</sup>:
-	   		   </em>
-	   		   </p>
-	   		   <ul class="foldContainer">
-	   			   <li class="foldButton0">None</li>
-	   			   <li class="foldButton2">2-FOLD</li>
-	   			   <li class="foldButton3">3-FOLD</li>
-	   			   <li class="foldButton4">4-FOLD</li>
-	   			   <li class="foldButton5">5-FOLD</li>
-	   		   </ul>
-	   			<div class="module">
-	   			   <p class="slide3Statement0"><em>AF strokes more severely impact patients compared<br />with other strokes<sup>2</sup></em></p>
-	   			   <ul>
-	   				   <li class="slide3Statement1">In the year following a stroke, AF patients face a<br /><b>50%</b> risk of death<sup>3</sup></li>
-	   				   <li class="slide3Statement2">More than <b>half</b> of patients with AF-related<br />strokes will become disabled<sup>4</sup></li>
-	   			   </ul>
-	   			</div>
-	   		   <div class="stickMan stickMan0 fold4 fold3 fold2 fold0"></div>
-	   		   <div class="stickMan stickMan1 fold4 fold3 fold2 fold0"></div>
-	   		   <div class="stickMan stickMan2 fold4 fold3 fold2"></div>
-	   		   <div class="stickMan stickMan3 fold4 fold3 fold2"></div>
-	   		   <div class="stickMan stickMan4 fold4 fold3"></div>
-	   		   <div class="stickMan stickMan5 fold4 fold3"></div>
-	   		   <div class="stickMan stickMan6 fold4"></div>
-	   		   <div class="stickMan stickMan7 fold4"></div>
-	   		   <div class="stickMan stickMan8"></div>
-	   		   <div class="stickMan stickMan9"></div>
-	   		</div>
-	   		</article>
-	   	   </section>
-	   		
-	   	<section id="current_treatment_section" class="slide">
-	   		<article id="current_treatment" monitor-id="" data-monitorId="Warfarin Limitations can Leave Many Patients Unprotected">
-	   			<div class="slide4 content-wrapper">
-	   				<h1>Warfarin Limitations can Leave Many Patients Unprotected</h1>
-	   				<p>Anticoagulation effectively prevents strokes, yet<br />
-	   				<em>Warfarin drawbacks can challenge even your best efforts<sup>5</sup></em></p>
-	   				<div class="card-container">
-	   					<div class="card">
-	   						<ul class="boxes module face front">
-	   							<li><span>Unpredictable<br />anticoagulation</span></li>
-	   							<li><span>Frequent dose<br />adjustments</span></li>
-	   							<li><span>Coagulation monitoring</span></li>
-	   							<li><span>Many drug-drug<br />interactions</span></li>
-	   							<li><span>Dietary restrictions</span></li>
-	   							<li><span>Patient adherence</span></li>
-	   						</ul>
-	   						<ul class="men module face back">
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   							<li><br /></li>
-	   						</ul>
-	   					</div>
-	   				</div>
-	   				<p class="subTextMain hideElem"><em>The potential result of limitations-AF patients receive<br /> no anticoagulation or inadequate anticoagulation</em></p>
-	   				<ul class="subTexts">
-	   					<li class="hideElem subText1">Despite guidelines, only <span class="pinkEm">50%</span> of AF patients<br />who need prophylaxies recieve it<sup>6</sup></li>
-	   					<li class="hideElem subText2">Only <span class="pinkEm">1 in 10</span> AF patients is adequately<br />anticoagulated at the time of first stroke<sup>4</sup></li>
-	   				</ul>
-	   			</div>
-	   		 </article>
-	   	   </section>
-	   	   
-	   	<section id="xarelto_section" class="slide">
-	      <article class="innerslide morebelow" id="xarelto_slide1">
-	   			<div class="slide5">
-	   				 <h1><span>One-Tablet, Once-Daily Xarelto<sup>®</sup><br />Simplifies Protection from Stroke<sup>7</sup></span></h1>
-	   				 <div class="module clean">
-	   					   <p>SHIFT TO SIMPLE PROTECTION</p>
-	   				   </div>
-	   
-	   					<div id="pilldrag" class="dragdealer">
-	   						<div class="handle"></div>
-	   					</div>
-	   
-	   					<table>
-	   						<tr>
-	   						   <td class="noborder"><br /></td>
-	   						   <td class="warfarin noborder" rowspan="2">warfarin<br /><span>VKAs</span><sup>5</sup></td>
-	   						   <td class="xarelto noborder" rowspan="2">Xarelto<br /><span>Direct Factor Xa<br />Inhibitor</span><sup>8</sup>
-	   						   </td>
-	   					   </tr>
-	   						<tr>
-	   						   <td class="noborder"><br /></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td>Once-daily administration</td>
-	   						   <td class="warfarin stateChecked"></td>
-	   						   <td class="xarelto stateChecked"></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td>Fast onset of action</td>
-	   						   <td class="warfarin">&nbsp;</td>
-	   						   <td class="xarelto stateChecked"></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td>Reliable fixed dose</td>
-	   						   <td class="warfarin">&nbsp;</td>
-	   						   <td class="xarelto stateChecked"></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td>No need for coagulation monitoring</td>
-	   						   <td class="warfarin"></td>
-	   						   <td class="xarelto stateChecked"></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td>Low risk of drug-drug interactions</td>
-	   						   <td class="warfarin"></td>
-	   						   <td class="xarelto stateChecked"></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td>No dietary restrictions</td>
-	   						   <td class="warfarin"></td>
-	   						   <td class="xarelto stateChecked"></td>
-	   					   </tr>
-	   						<tr>
-	   						   <td colspan="3" class="endStatement"><p>The end of complicated anticoagulation.<br />The beginning of simple stroke prevention.</p></td>
-	   					   </tr>
-	   					</table>
-	   			   </div>
-	   		 </article>
-	   		
-	   		 <article class="innerslide moreabove moa moa-xarelto" id="xarelto_slide2">
-					<div class="content-wrapper">
-
-						<h1>The Science Behind Simple and<br />Effective Stroke Prevention</h1>
-						<p><em>Xarelto<sup>&reg;</sup> precisely targets the pivotal point in the<br />coagulation cascade to prevent thrombin burst<sup>5</sup></em></p>
-
-						<div class="moa-nav">
-							<div class="moa-nav-inner">
-								<ul>
-									<li class="moa-xarelto">Xarelto</li>
-									<li class="moa-ufh" >UFH</li>
-									<li class="moa-vitamin" >Vitamin K</li>
-									<li class="moa-lmwh" >LMWH</li>
-									<li class="moa-fondaparinux" >Fondaparinux</li>
-									<li class="moa-dti" >DTI</li>
-								</ul>
-							</div>
-						</div>
-
-						<ul class="moa-legend">
-							<li class="active">active factor</li>
-							<li class="inactive">inactive factor</li>
-							<li class="catalysis">catalysis</li>
-							<li class="transformation">transformation</li>
-						</ul>
-
-						<div class="moa-ani moa-xarelto-ani">
-							<div class="moa-initiation">INITIATION</div>
-							<div class="moa-propagation">PROPAGATION</div>
-							<div class="moa-clotformation">CLOT FORMATION</div>
-
-							<div class="moa-part moa-xarelto-x">X</div>
-							<div class="moa-part moa-xarelto-tf">TF</div>
-							<div class="moa-part moa-xarelto-viia">VIIa</div>
-							<div class="moa-part moa-xarelto-ix">IX</div>
-							<div class="moa-part moa-xarelto-ixa">IXa</div>
-							<div class="moa-part moa-xarelto-xa">Xa</div>
-							<div class="moa-part moa-xarelto-ii">II</div>
-							<div class="moa-part moa-xarelto-iia">IIa</div>
-
-							<div class="moa-text moa-xarelto-prothrombin">Prothrombin</div>
-							<div class="moa-text moa-xarelto-thrombin">Thrombin</div>
-							<div class="moa-text moa-xarelto-fibrinogen">Fibrinogen</div>
-							<div class="moa-text moa-xarelto-fibrin">Fibrin</div>
-
-							<div class="moa-line-solid moa-xarelto-x-xa">X -> Xa</div>
-							<div class="moa-line-dashed moa-xarelto-tf-xa">TF -> Xa</div>
-							<div class="moa-line-dashed moa-xarelto-tf-ixa">TF -> IXa</div>
-							<div class="moa-line-solid moa-xarelto-ix-ixa">IX -> IXa</div>
-							<div class="moa-line-dashed moa-xarelto-ixa-xa">IXa -> Xa</div>
-							<div class="moa-line-dashed moa-xarelto-xa-iia">Xa -> IIa</div>
-							<div class="moa-line-solid moa-xarelto-ii-iia">II -> IIa</div>
-							<div class="moa-line-dashed moa-xarelto-iia-fibrin">IIa -> fibrin</div>
-							<div class="moa-line-solid moa-xarelto-fibrinogen-fibrin">Fibrinogen -> fibrin</div>
-
-							<div class="moa-xarelto-brand">Xarelto&reg;</div>
-							<div class="moa-xarelto-info">Direct inhibition of both free Factor Xa and Factor Xa bound in the prothrombinase complex</div>
-							<div class="moa-xarelto-arc">Xarelto -> Ax</div>
-
-							<div class="moa-xarelto-glow moa-xarelto-glow-a"></div>
-							<div class="moa-xarelto-glow moa-xarelto-glow-b"></div>
-							<div class="moa-xarelto-glow moa-xarelto-glow-c"></div>
-						</div>
-
-						<div class="moa-ani moa-ufh-ani">
-							<div class="moa-initiation">INITIATION</div>
-							<div class="moa-propagation">PROPAGATION</div>
-							<div class="moa-clotformation">CLOT FORMATION</div>
-
-							<div class="moa-part moa-ufh-x">X</div>
-							<div class="moa-part moa-ufh-tf">TF</div>
-							<div class="moa-part moa-ufh-viia">VIIa</div>
-							<div class="moa-part moa-ufh-ix">IX</div>
-							<div class="moa-part moa-ufh-ixa">IXa</div>
-							<div class="moa-part moa-ufh-xa">Xa</div>
-							<div class="moa-part moa-ufh-ii">II</div>
-							<div class="moa-part moa-ufh-iia">IIa</div>
-
-							<div class="moa-part moa-ufh-ii-a">II</div>
-							<div class="moa-part moa-ufh-ii-b">II</div>
-							<div class="moa-part moa-ufh-ii-c">II</div>
-							<div class="moa-part moa-ufh-ii-d">II</div>
-
-							<div class="moa-part moa-ufh-iia-a">IIa</div>
-							<div class="moa-part moa-ufh-iia-b">IIa</div>
-							<div class="moa-part moa-ufh-iia-c">IIa</div>
-							<div class="moa-part moa-ufh-iia-d">IIa</div>
-
-							<div class="moa-text moa-ufh-prothrombin">Prothrombin</div>
-							<div class="moa-text moa-ufh-thrombin">Thrombin</div>
-							<div class="moa-text moa-ufh-fibrinogen">Fibrinogen</div>
-							<div class="moa-text moa-ufh-fibrin">Fibrin</div>
-
-							<div class="moa-line-solid moa-ufh-x-xa">X -> Xa</div>
-							<div class="moa-line-dashed moa-ufh-tf-xa">TF -> Xa</div>
-							<div class="moa-line-dashed moa-ufh-tf-ixa">TF -> IXa</div>
-							<div class="moa-line-solid moa-ufh-ix-ixa">IX -> IXa</div>
-							<div class="moa-line-dashed moa-ufh-ixa-xa">IXa -> Xa</div>
-							<div class="moa-line-dashed moa-ufh-xa-iia">Xa -> IIa</div>
-							<div class="moa-line-solid moa-ufh-ii-iia">II -> IIa</div>
-							<div class="moa-line-dashed moa-ufh-iia-fibrin">IIa -> fibrin</div>
-							<div class="moa-line-solid moa-ufh-fibrinogen-fibrin">Fibrinogen -> fibrin</div>
-
-							<div class="moa-ufh-brand">UFH</div>
-							<div class="moa-ufh-info-a">Factor Xa bound in the prethrombinase complex remains active</div>
-							<div class="moa-ufh-info-b">Indirect inhibition of free Factor Xa</div>
-							<div class="moa-ufh-info-c">Inhibition of Factor IIa</div>
-
-							<div class="moa-ufh-arc-a">UFH -> Ax</div>
-							<div class="moa-ufh-arc-b">UFH -> IIa</div>
-
-							<div class="moa-ufh-glow moa-ufh-glow-a"></div>
-							<div class="moa-ufh-glow moa-ufh-glow-b"></div>
-							<div class="moa-ufh-glow moa-ufh-glow-c"></div>
-						</div>
-
-						<div class="moa-ani moa-vitamin-ani">
-							<div class="moa-initiation">INITIATION</div>
-							<div class="moa-propagation">PROPAGATION</div>
-							<div class="moa-clotformation">CLOT FORMATION</div>
-
-							<div class="moa-part moa-vitamin-x">X<span>VKA</span></div>
-							<div class="moa-part moa-vitamin-tf">TF</div>
-							<div class="moa-part moa-vitamin-viia">VIIa</div>
-							<div class="moa-part moa-vitamin-ix">IX<span>VKA</span></div>
-							<div class="moa-part moa-vitamin-ixa">IXa</div>
-							<div class="moa-part moa-vitamin-xa">Xa</div>
-							<div class="moa-part moa-vitamin-ii">II<span>VKA</span></div>
-							<div class="moa-part moa-vitamin-iia">IIa</div>
-
-							<div class="moa-part moa-vitamin-vii">VII<span>VKA</span></div>
-
-							<div class="moa-text moa-vitamin-prothrombin">Prothrombin</div>
-							<div class="moa-text moa-vitamin-thrombin">Thrombin</div>
-							<div class="moa-text moa-vitamin-fibrinogen">Fibrinogen</div>
-							<div class="moa-text moa-vitamin-fibrin">Fibrin</div>
-
-							<div class="moa-line-solid moa-vitamin-x-xa">X -> Xa</div>
-							<div class="moa-line-dashed moa-vitamin-tf-xa">TF -> Xa</div>
-							<div class="moa-line-dashed moa-vitamin-tf-ixa">TF -> IXa</div>
-							<div class="moa-line-solid moa-vitamin-ix-ixa">IX -> IXa</div>
-							<div class="moa-line-dashed moa-vitamin-ixa-xa">IXa -> Xa</div>
-							<div class="moa-line-dashed moa-vitamin-xa-iia">Xa -> IIa</div>
-							<div class="moa-line-solid moa-vitamin-ii-iia">II -> IIa</div>
-							<div class="moa-line-dashed moa-vitamin-iia-fibrin">IIa -> fibrin</div>
-							<div class="moa-line-solid moa-vitamin-fibrinogen-fibrin">Fibrinogen -> fibrin</div>
-
-							<div class="moa-line-solid moa-vitamin-vii-viia">VII -> VIIa</div>
-
-							<div class="moa-vitamin-info">Vitamin K Antagonists (VKAs) inhibit the synthesis of the coagulation Factors II, VII, IX & X</div>
-
-							<div class="moa-vitamin-glow moa-vitamin-glow-a"></div>
-							<div class="moa-vitamin-glow moa-vitamin-glow-b"></div>
-							<div class="moa-vitamin-glow moa-vitamin-glow-c"></div>
-							<div class="moa-vitamin-glow moa-vitamin-glow-d"></div>
-						</div>
-
-						<div class="moa-ani moa-lmwh-ani">
-							<div class="moa-initiation">INITIATION</div>
-							<div class="moa-propagation">PROPAGATION</div>
-							<div class="moa-clotformation">CLOT FORMATION</div>
-
-							<div class="moa-part moa-lmwh-x">X</div>
-							<div class="moa-part moa-lmwh-tf">TF</div>
-							<div class="moa-part moa-lmwh-viia">VIIa</div>
-							<div class="moa-part moa-lmwh-ix">IX</div>
-							<div class="moa-part moa-lmwh-ixa">IXa</div>
-							<div class="moa-part moa-lmwh-xa">Xa</div>
-							<div class="moa-part moa-lmwh-ii">II</div>
-							<div class="moa-part moa-lmwh-iia">IIa</div>
-
-							<div class="moa-part moa-lmwh-ii-a">II</div>
-							<div class="moa-part moa-lmwh-ii-b">II</div>
-							<div class="moa-part moa-lmwh-ii-c">II</div>
-							<div class="moa-part moa-lmwh-ii-d">II</div>
-
-							<div class="moa-part moa-lmwh-iia-a">IIa</div>
-							<div class="moa-part moa-lmwh-iia-b">IIa</div>
-							<div class="moa-part moa-lmwh-iia-c">IIa</div>
-							<div class="moa-part moa-lmwh-iia-d">IIa</div>
-
-							<div class="moa-text moa-lmwh-prothrombin">Prothrombin</div>
-							<div class="moa-text moa-lmwh-thrombin">Thrombin</div>
-							<div class="moa-text moa-lmwh-fibrinogen">Fibrinogen</div>
-							<div class="moa-text moa-lmwh-fibrin">Fibrin</div>
-
-							<div class="moa-line-solid moa-lmwh-x-xa">X -> Xa</div>
-							<div class="moa-line-dashed moa-lmwh-tf-xa">TF -> Xa</div>
-							<div class="moa-line-dashed moa-lmwh-tf-ixa">TF -> IXa</div>
-							<div class="moa-line-solid moa-lmwh-ix-ixa">IX -> IXa</div>
-							<div class="moa-line-dashed moa-lmwh-ixa-xa">IXa -> Xa</div>
-							<div class="moa-line-dashed moa-lmwh-xa-iia">Xa -> IIa</div>
-							<div class="moa-line-solid moa-lmwh-ii-iia">II -> IIa</div>
-							<div class="moa-line-dashed moa-lmwh-iia-fibrin">IIa -> fibrin</div>
-							<div class="moa-line-solid moa-lmwh-fibrinogen-fibrin">Fibrinogen -> fibrin</div>
-
-							<div class="moa-lmwh-brand">LMWH</div>
-							<div class="moa-lmwh-info-a">Factor Xa bound in the prothrombinase complex remains active</div>
-							<div class="moa-lmwh-info-b">Indirect inhibition of free Factor Xa</div>
-							<div class="moa-lmwh-info-c">Inhibition of Factor Ila</div>
-
-							<div class="moa-lmwh-arc-a">LMWH -> Ax</div>
-							<div class="moa-lmwh-arc-b">LMWH -> IIa</div>
-
-							<div class="moa-lmwh-glow moa-lmwh-glow-a"></div>
-							<div class="moa-lmwh-glow moa-lmwh-glow-b"></div>
-							<div class="moa-lmwh-glow moa-lmwh-glow-c"></div>
-						</div>
-
-						<div class="moa-ani moa-fondaparinux-ani">
-							<div class="moa-initiation">INITIATION</div>
-							<div class="moa-propagation">PROPAGATION</div>
-							<div class="moa-clotformation">CLOT FORMATION</div>
-
-							<div class="moa-part moa-fondaparinux-x">X</div>
-							<div class="moa-part moa-fondaparinux-tf">TF</div>
-							<div class="moa-part moa-fondaparinux-viia">VIIa</div>
-							<div class="moa-part moa-fondaparinux-ix">IX</div>
-							<div class="moa-part moa-fondaparinux-ixa">IXa</div>
-							<div class="moa-part moa-fondaparinux-xa">Xa</div>
-							<div class="moa-part moa-fondaparinux-ii">II</div>
-							<div class="moa-part moa-fondaparinux-iia">IIa</div>
-
-							<div class="moa-part moa-fondaparinux-ii-a">II</div>
-							<div class="moa-part moa-fondaparinux-ii-b">II</div>
-							<div class="moa-part moa-fondaparinux-ii-c">II</div>
-							<div class="moa-part moa-fondaparinux-ii-d">II</div>
-
-							<div class="moa-part moa-fondaparinux-iia-a">IIa</div>
-							<div class="moa-part moa-fondaparinux-iia-b">IIa</div>
-							<div class="moa-part moa-fondaparinux-iia-c">IIa</div>
-							<div class="moa-part moa-fondaparinux-iia-d">IIa</div>
-
-							<div class="moa-text moa-fondaparinux-prothrombin">Prothrombin</div>
-							<div class="moa-text moa-fondaparinux-thrombin">Thrombin</div>
-							<div class="moa-text moa-fondaparinux-fibrinogen">Fibrinogen</div>
-							<div class="moa-text moa-fondaparinux-fibrin">Fibrin</div>
-
-							<div class="moa-line-solid moa-fondaparinux-x-xa">X -> Xa</div>
-							<div class="moa-line-dashed moa-fondaparinux-tf-xa">TF -> Xa</div>
-							<div class="moa-line-dashed moa-fondaparinux-tf-ixa">TF -> IXa</div>
-							<div class="moa-line-solid moa-fondaparinux-ix-ixa">IX -> IXa</div>
-							<div class="moa-line-dashed moa-fondaparinux-ixa-xa">IXa -> Xa</div>
-							<div class="moa-line-dashed moa-fondaparinux-xa-iia">Xa -> IIa</div>
-							<div class="moa-line-solid moa-fondaparinux-ii-iia">II -> IIa</div>
-							<div class="moa-line-dashed moa-fondaparinux-iia-fibrin">IIa -> fibrin</div>
-							<div class="moa-line-solid moa-fondaparinux-fibrinogen-fibrin">Fibrinogen -> fibrin</div>
-
-							<div class="moa-fondaparinux-brand">Fondaparinux</div>
-							<div class="moa-fondaparinux-info-a">Factor Xa bound in the prothrombinase complex remains active</div>
-							<div class="moa-fondaparinux-info-b">Indirect inhibition of free Factor Xa via antitrombin</div>
-
-							<div class="moa-fondaparinux-arc-a">Fondaparinux -> Ax</div>
-
-							<div class="moa-fondaparinux-glow moa-fondaparinux-glow-a"></div>
-							<div class="moa-fondaparinux-glow moa-fondaparinux-glow-b"></div>
-							<div class="moa-fondaparinux-glow moa-fondaparinux-glow-c"></div>
-						</div>
-
-						<div class="moa-ani moa-dti-ani">
-							<div class="moa-initiation">INITIATION</div>
-							<div class="moa-propagation">PROPAGATION</div>
-							<div class="moa-clotformation">CLOT FORMATION</div>
-
-							<div class="moa-part moa-dti-x">X</div>
-							<div class="moa-part moa-dti-tf">TF</div>
-							<div class="moa-part moa-dti-viia">VIIa</div>
-							<div class="moa-part moa-dti-ix">IX</div>
-							<div class="moa-part moa-dti-ixa">IXa</div>
-							<div class="moa-part moa-dti-xa">Xa</div>
-							<div class="moa-part moa-dti-ii">II</div>
-							<div class="moa-part moa-dti-iia">IIa</div>
-
-							<div class="moa-part moa-dti-ii-a">II</div>
-							<div class="moa-part moa-dti-ii-b">II</div>
-							<div class="moa-part moa-dti-ii-c">II</div>
-							<div class="moa-part moa-dti-ii-d">II</div>
-							<div class="moa-part moa-dti-ii-e">II</div>
-							<div class="moa-part moa-dti-ii-f">II</div>
-							<div class="moa-part moa-dti-ii-g">II</div>
-							<div class="moa-part moa-dti-ii-h">II</div>
-							<div class="moa-part moa-dti-ii-i">II</div>
-							<div class="moa-part moa-dti-ii-j">II</div>
-							<div class="moa-part moa-dti-ii-k">II</div>
-							<div class="moa-part moa-dti-ii-l">II</div>
-
-							<div class="moa-part moa-dti-iia-a">IIa</div>
-							<div class="moa-part moa-dti-iia-b">IIa</div>
-							<div class="moa-part moa-dti-iia-c">IIa</div>
-							<div class="moa-part moa-dti-iia-d">IIa</div>
-							<div class="moa-part moa-dti-iia-e">IIa</div>
-							<div class="moa-part moa-dti-iia-f">IIa</div>
-							<div class="moa-part moa-dti-iia-g">IIa</div>
-							<div class="moa-part moa-dti-iia-h">IIa</div>
-							<div class="moa-part moa-dti-iia-i">IIa</div>
-							<div class="moa-part moa-dti-iia-j">IIa</div>
-							<div class="moa-part moa-dti-iia-k">IIa</div>
-							<div class="moa-part moa-dti-iia-l">IIa</div>
-
-							<div class="moa-text moa-dti-prothrombin">Prothrombin</div>
-							<div class="moa-text moa-dti-thrombin">Thrombin</div>
-							<div class="moa-text moa-dti-fibrinogen">Fibrinogen</div>
-							<div class="moa-text moa-dti-fibrin">Fibrin</div>
-
-							<div class="moa-line-solid moa-dti-x-xa">X -> Xa</div>
-							<div class="moa-line-dashed moa-dti-tf-xa">TF -> Xa</div>
-							<div class="moa-line-dashed moa-dti-tf-ixa">TF -> IXa</div>
-							<div class="moa-line-solid moa-dti-ix-ixa">IX -> IXa</div>
-							<div class="moa-line-dashed moa-dti-ixa-xa">IXa -> Xa</div>
-							<div class="moa-line-dashed moa-dti-xa-iia">Xa -> IIa</div>
-							<div class="moa-line-solid moa-dti-ii-iia">II -> IIa</div>
-							<div class="moa-line-dashed moa-dti-iia-fibrin">IIa -> fibrin</div>
-							<div class="moa-line-solid moa-dti-fibrinogen-fibrin">Fibrinogen -> fibrin</div>
-
-							<div class="moa-dti-brand">DTI</div>
-							<div class="moa-dti-info-a">Inhibition of Factor Ila</div>
-
-							<div class="moa-dti-arc-a">DTI -> IIa</div>
-
-							<div class="moa-dti-glow moa-dti-glow-a"></div>
-							<div class="moa-dti-glow moa-dti-glow-b"></div>
-							<div class="moa-dti-glow moa-dti-glow-c"></div>
-						</div>
-
-					</div>
-				</article>
-	      </section>	   
-	   	
-	   	   <section id="rocketAF_section" class="slide">
-	   	      <article class="innerslide morebelow" id="rocketAF_slide1" data-monitorId="The Largest Stroke Prevention Trial of its Kind">
-	   	   	<div class="rocketaf" id="rocket_af_content1">
-	   	   		<h1>The Largest Stroke Prevention Trial of its Kind</h1>
-	   	   		<div class="moduleClean">
-	   	   			ROCKET AF is a pivotal,<br />
-	   	   			<b>double-blind</b> study with over<br />
-	   	   			<b>14,000</b> AF patients from<br />
-	   	   			<b>1,100</b> sites across<br />
-	   	   			<b>45</b> countries with a<br />
-	   	   			<b>2-year</b> median follow-up<sup>11</sup>
-	   	   		</div>
-	   	   	</div>
-	   	      </article>
-	   	      <article class="innerslide morebelow moreabove" id="rocketAF_slide2" data-monitorId="ROCKET AF - Enrollment of patients without prior stroke">
-	   	      <div class="rocketaf1">
-	   	   	   <h1>ROCKET AF is a Rigorous,<br />Double-Blind Stroke Prevention Trial<sup>11,12</sup></h1>
-	   	   	   <div class="module">
-	   	   		<div class="fig6_1_right">
-	   	   	    </div>
-	   	   	   </div>
-	   	   	   <div class="footnote"><sup>a</sup>Enrollment of patients without prior stroke, transient ischaemic attack (TIA), or systemic embolism and only 2 factors capped at 10%</div>
-	   	   	  </div>
-	   	   	 </article>
-	   	   	 
-	   	   	 <article class="innerslide morebelow moreabove" id="rocketAF_slide3" data-monitorId="ROCKET AF - Outcome measures">
-	   	   	   <div class="slide6-2">
-	   	   		   <h1>ROCKET AF is a Rigorous,<br />Double-Blind Stroke Prevention Trial<sup>11,12</sup></h1>
-	   	   		   <div class="module">
-	   	   			   <p>Primary outcome measure</p>
-	   	   			   <ul>
-	   	   				   <li><b>A composite of stroke and systemic embolism (SE)<sup>11</sup></b></li>
-	   	   			   </ul>
-	   	   	   
-	   	   			   <p>Secondary outcome measures</p>
-	   	   			   <ul>
-	   	   				   <li>A composite of stroke, SE, and vascular death<sup>11</sup></li>
-	   	   				   <li>A composite of stroke, SE, myocardial infarction (MI),<br />and vascular death<sup>11</sup></li>
-	   	   			   </ul>
-	   	   	   
-	   	   			   <p>Principal safety outcome measure</p>
-	   	   			   <ul>
-	   	   				   <li>A composite of major and non-major clinically relevant<br />(NMCR) bleeding events<sup>11</sup></li>
-	   	   			   </ul>
-	   	   		   </div>
-	   	   	 </article>
-	   	   	 
-	   	   	 <article id="rocketAF_slide4" class="innerslide moreabove" data-monitorId="ROCKET AF Studied Patients Commonly Seen in Daily Practice">
-	   	   		 <div class="slide6-3">
-	   	   			 <h1>ROCKET AF Studied Patients<br />Commonly Seen in Daily Practice</h1>
-	   	   			 <p><em>In the landmark trial, Xarelto<sup>®</sup> was studied across a wide range of patients<sup>13</sup></em></p>
-	   	   			 <div class="module clean">
-	   	   				 <p>PATIENT DEMOGRAPHICS</p>
-	   	   			 </div>
-	   	   		 
-	   	   			 <table>
-	   	   		 		<tr>
-	   	   					 <td class="noborder"><br /></td>
-	   	   					 <td class="xarelto noborder tableHead">Xarelto</td>
-	   	   				 </tr>
-	   	   		 		<tr>
-	   	   					 <td>Age</td>
-	   	   					 <td class="xarelto">73 years</td>
-	   	   				 </tr>
-	   	   		 		<tr>
-	   	   					 <td>Hypertension</td>
-	   	   					 <td class="xarelto">90%</td>
-	   	   				 </tr>
-	   	   		 		 <tr>
-	   	   					 <td>Congestive heart failure</td>
-	   	   					 <td class="xarelto">63%</td>
-	   	   				 </tr>
-	   	   		 		  <tr>
-	   	   					 <td>Prior Stroke/TIA/Systemic embolism</td>
-	   	   					 <td class="xarelto">55%</td>
-	   	   				 </tr>
-	   	   		 		<tr>
-	   	   					 <td>Diabetes</td>
-	   	   					 <td class="xarelto">40%</td>
-	   	   				 </tr>
-	   	   		 		<tr>
-	   	   					 <td>Prior MI</td>
-	   	   					 <td class="xarelto">17%</td>
-	   	   				 </tr>
-	   	   			 </table>
-	   	   			 <div class="footnote">Patient demographics were well balanced between arms, with no statistical differences.</div>
-	   	   		 </div>
-	   	   	 </article>
-	   	   </section>
-	   	   
-	   		  <section id="efficacy_section" class="slide">
-	   				
-	   					<article class="innerslide morebelow" id="efficacy_slide1" data-monitorId="Superior Protection with Xarelto">
-	   					 <div class="content-wrapper slide6">
-	   					     <h1>Superior Protection with Xarelto<sup>&reg;</sup></h1>
-	   					     <p>Active treatment with once-daily Xarelto vs warfarin in AF patients</p>
-	   					     <div style="height: 420px;">
-	   					         <p><em>Significantly reduces <em>stroke</em> and <em>systemic embolism</em><sup>12</sup></em></p>
-	   					         <div class="module" style="width: 676px; height: 384px; left: 130px; background-image: url(content/images/efficacy/6.0a_graph.png);">
-	   					             <div class="legend">CUMULATIVE<br/>EVENT RATE (%)</div>
-	   					             <div class="effGraphArrow"><br /></div>
-	   					         </div>
-	   					         <div class="ref1">
-	   					             <p>Pre-specified, on treatment analysis in the safety population.</p>
-	   					         </div>
-	   					     </div>
-	   					 </div>
-	   					</article>
-	   					
-	   						<article class="innerslide morebelow moreabove" id="efficacy_slide2" data-monitorId="Improved CV Protection with Xarelto">
-	   							<div class="content-wrapper slide61 itemStates">
-	   							    <h1><a href="#">Improved CV Protection with Xarelto<sup>&reg;</sup>.<br/>More Patient Benefits</a></h1>
-	   							    <p>Active treatment with once-daily Xarelto vs warfarin in AF patients</p>
-	   							    
-	   							   <div class="hideElem" style="height: 420px;">
-	   							    <p><em>Significantly reduces <em>overall CV outcomes</em>.<br/><span>(composite of stroke, systemic embolism, MI, and vascular death)<sup>12</sup></span></em></p>
-	   							        <div class="module" style="width: 559px; height: 309px; left: 210px; background-image: url(content/images/efficacy/graph.png)">
-	   							    		<div class="legend">EVENT RATE PER<br/>100 PT-YRS</div>		
-	   							    		<ul class="pillars">
-	   							    			<li class="brown">
-	   							    				<div class="pillar">
-	   							    					<img src="content/images/efficacy/pillar-brown.png" alt="">
-	   							    				</div>
-	   							    			</li>
-	   							    			<li class="magenta">
-	   							    				<div class="pillar">
-	   							    					<img src="content/images/efficacy/pillar-magenta.png" alt="">
-	   							    				</div>
-	   							    			</li>
-	   							    		</ul>
-	   							    		<img src="content/images/efficacy/drop-arrow.png" alt="" class="dropArrow"/>
-	   							    	</div>                     
-	   							    </div>                      
-	   							    
-	   							    <div class="hideElem" style="height: 420px;">
-	   							    	<p><em>Patients on Xarelto experienced numerically<br />fewer CV events vs warfarin<sup>12</sup></em></p>				           
-	   							        <dl class="diamonds">
-	   										<dt>MI</dt>
-	   										<dd><p><em>Xarelto (0.91) vs<br /> warfarin (1.12)<sup>12</sup></em></p></dd>
-	   										<dt>VASCULAR<br />DEATH</dt>
-	   										<dd><p><em>Xarelto (1.53) vs<br /> warfarin (1.71)<sup>12</sup></em></p></dd>
-	   									</dl>
-	   							    </div>
-	   						        
-	   								<div class="ref2">
-	   						            <p>All values are expressed as event rate per 100 patient-years<br/> and are
-	   						             from the pre-specified, on-treatment analysis in the <br/>safety population</p>
-	   						        </div> 	   						    
-	   								<ul class="dLinks">
-	   							          <li class="dLink1">Overall CV <br /> Outcomes</li>
-	   							          <li class="dLink2">MI and <br />Vascular Death</li>
-	   							      </ul>
-	   							</div>						
-	   					</article>
-	   						   				
-	   				<article class="innerslide moreabove" id="efficacy_slide3" data-monitorId="Trust a Benefit-Risk Profile with Proven Protection">
-	   					 <div class="efficacy_background">
-	   		  			 <h1><a href="#">Trust a Benefit-Risk Profile <br/>with Proven Protection</a></h1>
-	   		  			 <p>AF patients on Xarelto benefit from better overall protection: <br/>
-	   		  			 superior efficacy and demonstrated safety<em>Multiple points of protection with Xarelto<sup>&reg;</sup></em>
-	   		  			 </p>
-	   		  			 <div class="efficacy0"></div>
-	   		  			 <div class="ref zoom" id="efficacy_zoom">
-	   		  			 	<p><strong><sup>a</sup>Major + Non-major clinically relevant bleeding:</strong> event rate per 100 patient-years (14.91 vs 14.52).<br />
-	   		  			 		 <strong><sup>b</sup>Major bleeding:</strong> bleeding associated with a ≥2 g/dL fall in haemoglobin or requirement for transfusion of ≥2 units of packed
-	   		  			 	red blood cells or whole blood (clinically overt bleeding); the involvement of a critical site; or a fatal outcome. Event rate per 100
-	   		  			 	patient-years (3.60 vs 3.45).<br />
-	   		  			 	<strong><sup>c</sup>Non-major clinically relevant bleeding:</strong> overt bleeding not meeting the criteria for major bleeding but associated with
-	   		  			 	medical intervention; unscheduled contact with a physician; temporary study drug cessation; pain; or impairment of daily activities.
-	   		  			 	Event rate per 100 patient-years (11.80 vs 11.37).</p>	   		  			 </div>					
-	   					  </div>
-	   			    </article>
-	   			</section>		  
-	   		  	
-	   			<section id="safety_section" class="slide">
-	   			<article class="innerslide morebelow" id="safety_slide1" data-monitorId="Xarelto Significantly Reduces ICH and Fatal Bleeding Events">
-	   			<div class="slide7">
-	   			<h1>Xarelto<sup>&reg;</sup> Significantly Reduces<br/>ICH and Fatal Bleeding Events</h1>
-	   			<p>Active treatment with once-daily Xarelto vs warfarin in AF patients shows similar overall<br/>bleeding in the composite of major and non-major clinically relevant bleeding events<em>Reduce the risk of the most critical bleeds in your AF patients<sup>12</sup></em></p>
-	   
-	   			<dl class="diamonds">
-	   				<dt>50%<span>RRR</span></dt>
-	   				<dd><p><em>Reduced fatal bleeding events </em>Xarelto (0.24) vs warfarin (0.48), <i>P</i>=0.003<sup>12</sup></p></dd>
-	   				<dt>33%<span>RRR</span></dt>
-	   				<dd><p><em>Fewer ICH events </em>Xarelto (0.49) vs warfarin (0.74), <i>P</i>=0.019<sup>12</sup></p></dd>
-	   				<dt>31%<span>RRR</span></dt>
-	   				<dd><p><em>Fewer critical organ bleeding events </em>Xarelto (0.82) vs warfarin (1.18), <i>P</i>=0.007<sup>12</sup></p></dd>
-	   			</dl>
-	   			<div class="ref zoom" id="safety_zoom">
-	   				<p>All values are expressed as event rate per 100 patient-years. Patients on Xarelto had significant<br /> increases in the following major bleeding events:.a ≥2 g/dL fall in haemoglobin (2.8% vs. 2.3%, P=0.019) and transfusions (1.7% vs. 1.3%, P=0.044).</p>
-	   				<p><strong>Major bleeding</strong>: bleeding associated with a ≥2 g/dL fall in haemoglobin or requirement for transfusion of ≥2 units of packed red blood cells or .whole blood (clinically overt bleeding); the involvement of a critical site; or a fatal outcome.</p>
-	   				<p><strong>Non-major clinically relevant bleeding</strong>: overt bleeding not meeting the criteria for major bleeding but associated with medical intervention; unscheduled contact with a physician; temporary study drug cessation; pain; or impairment of daily activities. ICH=intracranial haemmorhagic.</p>
-	   			</div>
-	   			</div>
-	   			</article>
-	   			
-	   			<article class="innerslide moreabove" id="safety_slide2" data-monitorId="Trust a Benefit-Risk Profile with Proven Protection">
-	   			<div class="safety2">
-	   			<h1><a href="#">Trust a Benefit-Risk Profile <br/>with Proven Protection</a></h1>
-	   			<p>AF patients on Xarelto benefit from better overall protection: <br/>
-	   			superior efficacy and demonstrated safety<em>Multiple points of protection with Xarelto<sup>&reg;</sup></em>
-	   			</p>
-	   			<div class="safety0"></div>
-	   			<div class="ref bottom" id="safety_zoom2">
-	   				<p><strong><sup>a</sup>Major + Non-major clinically relevant bleeding:</strong> event rate per 100 patient-years (14.91 vs 14.52).<br />
-	   					 <strong><sup>b</sup>Major bleeding:</strong> bleeding associated with a ≥2 g/dL fall in haemoglobin or requirement for transfusion of ≥2 units of packed
-	   				red blood cells or whole blood (clinically overt bleeding); the involvement of a critical site; or a fatal outcome. Event rate per 100
-	   				patient-years (3.60 vs 3.45).<br />
-	   				<strong><sup>c</sup>Non-major clinically relevant bleeding:</strong> overt bleeding not meeting the criteria for major bleeding but associated with
-	   				medical intervention; unscheduled contact with a physician; temporary study drug cessation; pain; or impairment of daily activities.
-	   				Event rate per 100 patient-years (11.80 vs 11.37).</p>
-	   			</div>
-	   			</div>
-	   		</article>
-	   	   </section> 
-	   			
-	   			
-	   		<section id="administration_section" class="slide">
-	   			<article id="administration_slide" data-monitorId="More Protection with Less Worry">
-	   			 	<div class="slide8" id="slide8">
- 						<h1><a href="#">One-Tablet, Once-Daily Xarelto<sup>&reg;</sup> -<br/>More Protection with Less Worry<sup>7</sup></a></h1>
- 						<p><em>Superior protection in one simple fixed dose<sup>7</sup></em></p>
-  						<dl class="diamonds wide">
- 							<dt>20 mg</dt>
- 							<dd><img src="content/images/administration/pill.png" alt=""/><p>One 20-mg tablet, once daily for your AF patients<sup>7</sup></p></dd>
- 						</dl>
- 
- 						<p class="ref">One 15-mg tablet, once daily for patients with moderate renal impairment (creatinine clearance of 30-49 mL/min)<sup>7</sup></p>
- 
- 						<ul class="foldouts clickAndAnimate">
- 							<li>
- 								<a href="#" class="toggler">
- 									<h3>Simple to initiate</h3>
- 									<div class="content">
- 										<ul>
- 											<li>For your new AF patients, Xarelto provides protection from day one<sup>15</sup></li>
- 											<li>For AF patients taking VKA, stop VKA treatment. Once INR ≤ 3.0, start Xarelto<sup>7</sup></li>
- 										</ul>
- 									</div>
- 								</a>
- 							</li>
- 
- 							<li>
- 								<a href="#" class="toggler">
- 									<h3>Simple to manage</h3>
- 									<div class="content">
- 										<ul>
- 											<li>No coagulation monitoring, low risk of drug-drug interactions, no dietary restrictions<sup>8</sup></li>
- 											<li>Good tolerability<sup>12</sup></li>
- 										</ul>
- 									</div>
- 								</a>
- 							</li>
- 						</ul>
- 
- 						<div class="ref bottom">
- 							<p>VKA= vitamin K antagonist.<br/>Xarelto is not recommended for patients with prosthetic heart valves.<br />
- 							INR values should not be used. They are not a dependable measure of the anticoagulant activity of Xarelto.</p>
- 						</div>
- 					</div>
- 				</article>	   			
-	   			</section> 
-	   		   
-	   			<section id="summary_section" class="slide">
-	   			<article id="summary_slide" data-monitorId="Once-Daily Xarelto Simply Protects More of Your AF Patients">
-	   		   		<div class="slide9" id="slide9">
-	   				<h1><a href="#">Once-Daily Xarelto<sup>&reg;</sup> Simply Protects<br/>More of Your AF Patients</a></h1>
-	   				<p><em>Active treatment with once-daily Xarelto vs warfarin:</em></p>
-	   	
-	   				<ul class="diamonds clickAndAnimate">
-	   					<li class="activ">
-	   						<a href="#" class="toggler">
-	   							<h3>Simply</h3>
-	   							<div class="content">
-	   								<p><em>PROVIDING SUPERIOR PROTECTION</em><br/>against stroke and systemic embolism<sup>12</sup></p>
-	   							</div>
-	   						</a>
-	   					</li>
-	   					<li>
-	   						<a href="#" class="toggler">
-	   							<h3>Protecting</h3>
-	   							<div class="content">
-	   								<p><em>AGAINST MOST CRITICAL BLEEDS</em><br/>including ICH and fatal bleeding events<sup>12</sup></p>
-	   							</div>
-	   						</a>
-	   					</li>
-	   					<li>
-	   						<a href="#" class="toggler">
-	   							<h3>More</h3>
-	   							<div class="content">
-	   								<p><em>CARDIOVASCULAR PROTECTION</em> with reduced overall CV outcomes (composite of stroke, systemic embolism, MI, and vascular death)<sup>12</sup></p>
-	   							</div>
-	   						</a>
-	   					</li>
-	   					<li>
-	   						<a href="#" class="toggler">
-	   							<h3>Patients</h3>
-	   							<div class="content">
-	   								<p><em>BENEFIT FROM SIMPLIFIED TREATMENT</em> with <br>one-tablet, once-daily dosing with no monitoring<sup>7,9</sup></p>
-	   							</div>
-	   						</a>
-	   					</li>
-	   				</ul>
-	   			   </div>
-	   		 </article>
-	   		</section>	    
-	  </div>
+       
+	</div>
    </div>
+   <!-- 
    <div id="cover" class="cover">
-         <section id="home_section" class="slide">  
-         	 <article id="home_cover" data-monitorId="Home">
+         <div id="cover" class="slide">  
+         	 <div id="home_cover">
          	   <div class="slide_cover" id="home">
          	   <div class="frontLegCover"></div>
          	   <div class="frontSpafContainer">
@@ -1001,65 +118,18 @@
          	   <div class="frontVein"><br /></div>
          	   </div>
          	   </div>
-         	</article>
-          </section>
-   </div>
-
-   
-   <div id="thumbnav" class="thumbnav">
-   
-   <ul section-id="references_section">
-   	<li><img src="content/images/thumbnails/T_1.0.png" alt=""></li>
-   </ul>
-   
-   <ul section-id="home_section none">
-   	<li></li>
-   </ul>
-   
-   <ul section-id="stroke_in_af_section">
-   	<li><img src="content/images/thumbnails/T_2.0.png" alt=""></li>
-   </ul>
-   
-   <ul section-id="current_treatment_section">
-   	<li><img src="content/images/thumbnails/T_3.png" alt=""></li>
-   </ul>
-   
-   <ul section-id="xarelto_section">
-   	<li><img src="content/images/thumbnails/T_4.0.png" alt=""></li>
-   	<li><img src="content/images/thumbnails/T_4.1.png" alt=""></li>
-   </ul>
-   
-   <ul section-id="rocketAF_section">
-   	<li><img src="content/images/thumbnails/T_6.0.png" alt=""></li>
-   	<li><img src="content/images/thumbnails/T_6.1.png" alt=""></li>
-   	<li><img src="content/images/thumbnails/T_6.2.png" alt=""></li>
-   	<li><img src="content/images/thumbnails/T_6.3.png" alt=""></li>
-   </ul>
-   
-   	<ul section-id="efficacy_section">
-   		<li><img src="content/images/thumbnails/T_5.0.png" alt=""></li>
-   		<li><img src="content/images/thumbnails/T_5.1.png" alt=""></li>
-   		<li><img src="content/images/thumbnails/T_7.1.png" alt=""></li>
-   	</ul>
-  
-   	<ul section-id="safety_section">
-   		<li><img src="content/images/thumbnails/T_7.0.png" alt=""></li>
-   		<li><img src="content/images/thumbnails/T_7.1.png" alt=""></li>
-   	</ul>
-   	
-   	<ul section-id="administration_section">
-   		<li><img src="content/images/thumbnails/T_8.0.png" alt=""></li>
-   	</ul>
-   	
-   	<ul section-id="summary_section">
-   		<li><img src="content/images/thumbnails/T_9.0.png" alt=""></li>
-   	</ul>
-   	<div id="brain" class="branding"></div>
+         	</div>
+          </div>
    </div>
    
+    <div id="thumbnav" class="thumbnav">
+    	<div id="brain" class="branding"></div>
+    </div> -->
+   
+    
    <div id="footer" class="footer"></div>  
    <div id="references_button" class="referencesbutton"></div>
-   </div>
+</div>
    
    <div id="zoomWindow" class="zoomWindow">
    	  <div id="popupupContainer" class="popupContainer">

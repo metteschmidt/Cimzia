@@ -7,7 +7,7 @@
 .slide_cover p.frontTitle { 
      display: none;
 }
-.coverdiv.frontLeg { background: url(../images/app/body-background.jpg) no-repeat 100px 0px,
+.coverdiv.frontLeg { background: url(../images/app/body-background.png) no-repeat 100px 0px,
 url(../images/home/leg.png) no-repeat 100px 0px; width:470px;
     -webkit-transition: -webkit-transform 2s ease-out;
     -webkit-transform: translate3d(0,0,0);

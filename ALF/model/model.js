@@ -76,7 +76,7 @@ var Model = (function() {
     
     this.__defineGetter__("currentMenuItem",function() { return currentMenuItem});
     
-    this.__defineSetter__("currentMenuItem",function(val) {alert(val);currentMenuItem=val; 
+    this.__defineSetter__("currentMenuItem",function(val) {/*alert(val);*/currentMenuItem=val; 
     });
     
     var currentScroller;

@@ -89,7 +89,7 @@
 .slide .moa-line-solid {background-image: url(../images/moa/gx_arrow_solid.png);}
 .slide .moa-text {position: absolute; font-family: "FrutigerLTStd57Condensed"; color: #333366; font-size: 14px;}
 
-.slide.moa-zoom {background: white url(../images/app/body-background.jpg) no-repeat top left; z-index: 500; position: absolute; top: 0; left: 0;}
+.slide.moa-zoom {background: white url(../images/app/body-background.png) no-repeat top left; z-index: 500; position: absolute; top: 0; left: 0;}
 .slide.moa-zoom .content-wrapper {background: none !important;}
 .slide.moa-zoom .moa.zoom h1 {opacity: 0;}
 .slide.moa-zoom .moa.zoom p {opacity: 0;}

@@ -291,7 +291,7 @@
 .slide_cover p.frontTitle { 
      display: none;
 }
-.coverdiv.frontLeg { background: url(../images/app/body-background.jpg) no-repeat 100px 0px,
+.coverdiv.frontLeg { background: url(../images/app/body-background.png) no-repeat 100px 0px,
 url(../images/home/leg.png) no-repeat 100px 0px; width:470px;
     -webkit-transition: -webkit-transform 2s ease-out;
     -webkit-transform: translate3d(0,0,0);
@@ -1546,7 +1546,7 @@ dl.diamonds.wide dd img {
 
 /* Slideshow stylesheet */
 body {
-	background-image: url(../images/app/body-background.jpg);
+	background-image: url(../images/app/body-background.png);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -1566,7 +1566,7 @@ body {
 	width: 250px;
 	height: 70px;
 	z-index: 5;
-	background: url(../images/app/xarelto-logo.png) no-repeat 80px 0px;
+	//background: url(../images/app/xarelto-logo.png) no-repeat 80px 0px;
 	bottom: 0;
 	right: 0;
 }

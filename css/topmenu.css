@@ -8,6 +8,7 @@
     -webkit-transition: all 1s ease-out;
 	-webkit-transform: translate3d(-122px,0,0);
 	margin: 0;
+	background-image: url(../content/imagers/app/top-background.png);
 }
 
 .topnav ul {
@@ -23,6 +24,8 @@
 	height: 75px;
 	overflow: hidden;
     -webkit-transform: translate3d(0, 0, 0);
+    background-image: url(../content/images/app/xarelto-logo.png) no-repeat 900px 0px;
+    right: 0px;
 }
 
 .topnav.open{
@@ -58,6 +61,7 @@
 		color-stop(0.5, rgba(136,136,136, 1)),
 		color-stop(1, rgba(136,136,136, 1))
 	);
+	
 }
 .topnav .home {
 	height: 44px;

@@ -1,5 +1,5 @@
 body {
-	background-image: url(../content/images/app/body-background.jpg);
+	background-image: url(../content/images/app/body-background.png);
 	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
@@ -19,7 +19,7 @@ body {
 	width: 250px;
 	height: 70px;
 	z-index: 5;
-	background: url(../content/images/app/xarelto-logo.png) no-repeat 80px 0px;
+//	background: url(../content/images/app/xarelto-logo.png) no-repeat 80px 0px;
 	bottom: 0;
 	right: 0;
 }
